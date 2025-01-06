@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where We Work | ADS Nyanza</title>
+    
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Include FontAwesome for icons -->
+    <link href="https://kit.fontawesome.com/a076d05399.js" rel="stylesheet">
+    
+    <!-- Leaflet.js for interactive maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Section */
+        .hero-wrap {
+            background-image: url('images/main.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-wrap .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        /* Sidebar Navigation */
+        .nav-sidebar {
+            position: sticky;
+            top: 20px;
+            background-color: #fff;
+            border-right: 2px solid #ddd;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .nav-sidebar h4 {
+            color: #28a745; /* ADS Green */
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .nav-sidebar .region {
+            margin-bottom: 20px;
+        }
+
+        .nav-sidebar a {
+            font-size: 1.1rem;
+            color: #6f42c1; /* ADS Purple */
+            display: block;
+            margin: 5px 0;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-sidebar a:hover {
+            background-color: #28a745; /* ADS Green */
+            color: white;
+        }
+
+        /* Map Container */
+        #map {
+            height: 100%;
+            min-height: 500px;
+            margin-top: 20px;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero-wrap">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-7 text-center">
+                    <h1 class="mb-3 bread">Where We Work</h1>
+                    <p>Explore the areas where ADS Nyanza has made a lasting impact through various projects.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 nav-sidebar">
+                <h4>Regions and Projects</h4>
+                <div class="region" id="sidebar-kisumu">
+                    <h5>Kisumu County</h5>
+                    <p>
+                        <ul>
+                            <li>Early Childhood Development</li>
+                            <li>West Kenya Peace Initiative</li>
+                            <li>Emergency Response</li>
+                            <li>Integrated Climate Resilience</li>
+                            <li>People Empowerment for Sustainability</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="region" id="sidebar-homabay">
+                    <h5>Homa Bay County</h5>
+                    <p>
+                        <ul>
+                            <li>Global Fund Projects</li>
+                            <li>Integrated Climate Resilience</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="region" id="sidebar-siaya">
+                    <h5>Siaya County</h5>
+                    <p>
+                        <ul>
+                            <li>Early Childhood Development</li>
+                            <li>Integrated Climate Resilience</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="region" id="sidebar-nyamira">
+                    <h5>Nyamira County</h5>
+                    <p>
+                        <ul>
+                            <li>Emergency Response</li>
+                            <li>Early Childhood Development</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="region" id="sidebar-vihiga">
+                    <h5>Vihiga County</h5>
+                    <p>
+                        <ul>
+                            <li>Early Childhood Development</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="region" id="sidebar-burundi">
+                    <h5>Bujumbura, Burundi</h5>
+                    <p>
+                        <ul>
+                            <li>Peacebuilding and Emergency Relief</li>
+                            <li>Past Local Development Programs</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="col-md-9">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Leaflet.js for Interactive Maps -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <script>
+        // Initialize Leaflet map
+        var map = L.map('map').setView([0.2, 34.75], 7);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Add markers for counties
+        var locations = [
+            { coords: [0.1, 34.75], name: "Kisumu County", id: "sidebar-kisumu" },
+            { coords: [0.6, 34.6], name: "Homa Bay County", id: "sidebar-homabay" },
+            { coords: [0.5, 34.7], name: "Siaya County", id: "sidebar-siaya" },
+            { coords: [0.5, 34.8], name: "Nyamira County", id: "sidebar-nyamira" },
+            { coords: [0.7, 34.9], name: "Vihiga County", id: "sidebar-vihiga" },
+            { coords: [-3.373, 29.359], name: "Bujumbura, Burundi", id: "sidebar-burundi" }
+        ];
+
+        locations.forEach(function(location) {
+            var marker = L.marker(location.coords).addTo(map)
+                .bindPopup(`<b>${location.name}</b>`)
+                .on('click', function () {
+                    document.getElementById(location.id).scrollIntoView({ behavior: "smooth" });
+                });
+        });
+    </script>
+
+</body>
+</html>

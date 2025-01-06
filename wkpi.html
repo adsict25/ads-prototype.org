@@ -1,0 +1,593 @@
+<html lang="en">
+
+<head>
+    <title>ADS NYANZA - Our Programs</title>
+    <link rel="icon" type="image/x-icon" href="images/ads.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        /* Navbar Styling */
+        .navbar-green {
+            background-color: #28a745 !important;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .navbar .nav-link:hover {
+            color: #6f42c1 !important;
+            text-decoration: underline;
+        }
+
+        .dropdown-menu {
+            background-color: #28a745 !important;
+        }
+
+        .dropdown-item {
+            color: white !important;
+        }
+
+        .dropdown-item:hover {
+            background-color: #6f42c1 !important;
+        }
+
+        /* Hero Section */
+        .hero-wrap {
+            background-image: url('images/wkpi.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding: 10px 60px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-wrap .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .hero-wrap h1 {
+            color: white;
+            font-size: 3rem;
+            z-index: 2;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .hero-wrap h2 {
+            color: #6f42c1;
+            z-index: 2;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+
+        /* Program Details Section */
+        #programDetails {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #programDetails h3 {
+            color: #28a745;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        #programDetails p {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .btn-learn-more {
+            background-color: #28a745;
+            color: white;
+            border-radius: 25px;
+            padding: 10px 25px;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-learn-more:hover {
+            background-color: #6f42c1;
+        }
+
+        /* Success Stories Section */
+        .story-card img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .story-card img:hover {
+            transform: scale(1.05);
+        }
+
+        .success-stories h4 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        /* Volunteer Spotlight Section */
+        .volunteer-spotlight h4 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .volunteer-photo img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .volunteer-photo img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Feedback Section */
+        .feedback-section form {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .feedback-section textarea {
+            width: 100%;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .feedback-section button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 20px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .feedback-section button:hover {
+            background-color: #6f42c1;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar bg-light py-2 border-bottom">
+          <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo Section -->
+            <div>
+              <a href="index.html">
+                <img src="images/ads.png" alt="ADS Logo" style="height: 100px;">
+              </a>
+            </div>
+      
+            <!-- Language Dropdown -->
+            <div class="dropdown">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/uk.jpg" alt="English" style="height: 20px; margin-right: 5px;"> English
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('german')"><img src="images/german.png" alt="German" style="height: 20px; margin-right: 5px;"> German</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('french')"><img src="images/french.png" alt="French" style="height: 20px; margin-right: 5px;"> French</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('italian')"><img src="images/italian.png" alt="Italian" style="height: 20px; margin-right: 5px;"> Italian</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('spanish')"><img src="images/spanish.png" alt="Spanish" style="height: 20px; margin-right: 5px;"> Spanish</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('dutch')"><img src="images/dutch.jpg" alt="Dutch" style="height: 20px; margin-right: 5px;"> Dutch</a></li>
+              </ul>
+            </div>
+      
+            <!-- Social Media Icons -->
+            <div>
+              <a href="https://www.facebook.com/people/ADS-Nyanza/61557946673947/" class="text-secondary mx-2"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://x.com/Ads_Nyanza" class="text-secondary mx-2"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/adsnyanza/" class="text-secondary mx-2"><i class="fab fa-instagram"></i></a>
+              <a href="http://www.youtube.com/@ADS-NYANZA" class="text-secondary mx-2"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.linkedin.com/in/ads-nyanza-aa998b2b6/" class="text-secondary mx-2"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4CAF50;">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white font-weight-bold">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link text-white font-weight-bold">About Us</a></li>
+                <li class="nav-item dropdown">
+                  <a href="" class="nav-link dropdown-toggle text-white font-weight-bold" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="ecd.html">Early Childhood Development</a></li>
+                    <li><a class="dropdown-item" href="gf.html">Global Fund</a></li>
+                    <li><a class="dropdown-item" href="wkpi.html">West Kenya Peace Initiative</a></li>
+                    <li><a class="dropdown-item" href="icrp.html">Integrated Climate Resileince Project</a></li>
+                    <li><a class="dropdown-item" href="emergency.html">Emergency Response</a></li>
+                    <li><a class="dropdown-item" href="pesps.html">Peoples Empowerment & Sustainability Project</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="periodicals.html" class="nav-link text-white font-weight-bold">Periodicals</a></li>
+                <li class="nav-item"><a href="get-involved.html" class="nav-link text-white font-weight-bold">Get Involved</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link text-white font-weight-bold">Contact Us</a></li>
+                <li class="nav-item"><a href="https://ess.ads-nyanza.org/login" class="nav-link text-white font-weight-bold">Staff Portal</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+      
+    <!-- END nav -->
+    
+    <style>
+      /* CSS for dynamic color and boldness */
+      .dynamic-color {
+        color: #f5e8f5; /* Light color for good contrast with the greenish background */
+        transition: color 0.3s ease-in-out;
+      }
+    
+      .dynamic-color:hover {
+        color: #81c784; /* Brighter green to create a dynamic hover effect */
+      }
+    
+      .font-weight-bold {
+        font-weight: 700; /* Ensures text is bold */
+      }
+    </style>
+    
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+<div class="hero-wrap">
+    <div class="overlay"></div>
+    <div class="container">
+        <h1 class="text-right" style="direction: rtl;">West Kenya Peace Initiative</h1>
+        <h2 class="text-right" style="direction: rtl;">The Western Kenya Peace initive is adedicated to fostering peaceful coexistence amoung diverse ethnic communities</h2>
+    </div>
+</div>
+    <!-- Program Details Section -->
+    <section class="program-section" id="programDetails">
+        <div class="container">
+            <h3>Program Overview</h3>
+            <p>The Western Kenya Peace Initiative is dedicated to fostering peaceful coexistence among diverse ethnic communities in the region. By identifying conflict hotspots and working closely with local leaders and influencers, the Initiative proactively addresses emerging tensions. Their efforts include supporting victims of conflict through capacity building  to reduce disparities that often lead to unrest. Through collaboration with local and international partners, the Initiative strengthens its peacebuilding efforts and creates cultural exchange opportunities to promote mutual respect and understanding.  All this is done with the aim to build a harmonious and inclusive society where peace and unity prevail.</p>
+            <a href="wkpi.html" class="btn-learn-more">Learn More</a>
+        </div>
+    </section>
+
+<!-- Success Stories Section -->
+<section class="success-stories">
+    <div class="container">
+        <h4>Success Stories of WKPI's Impact</h4>
+        <div class="row">
+            <!-- Story 1 -->
+            <div class="col-md-4">
+                <div class="story-card">
+                    <img src="images/wkpi_1.JPG" alt="Community Empowerment">
+                    <h5>Empowering Rural Communities</h5>
+                    <p><b>Posted on: 10th October 2023</b></p>
+                    <p>Through innovative programs, WKPI has helped transform rural communities by providing essential resources and training, enabling local populations to thrive and create sustainable livelihoods.</p>
+                </div>
+            </div>
+            <!-- Story 2 -->
+            <div class="col-md-4">
+                <div class="story-card">
+                    <img src="images/wkpi_2.JPG" alt="Women Empowerment">
+                    <h5>Women’s Empowerment in Action</h5>
+                    <p><b>Posted on: 5th November 2023</b></p>
+                    <p>WKPI’s women-focused initiatives have empowered hundreds of women in Homa Bay, providing them with tools and support to start businesses, improve their health, and contribute significantly to community growth.</p>
+                </div>
+            </div>
+            <!-- Story 3 -->
+            <div class="col-md-4">
+                <div class="story-card">
+                    <img src="images/wkpi_3.JPG" alt="Education Initiatives">
+                    <h5>Improving Access to Education</h5>
+                    <p><b>Posted on: 22nd November 2023</b></p>
+                    <p>By facilitating access to quality education, WKPI has helped numerous children in underserved areas gain the skills and knowledge necessary for brighter futures, fostering a generation of leaders.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+   <!-- Volunteer Spotlight Section -->
+<section class="volunteer-spotlight">
+    <div class="container">
+        <h4>Volunteer Spotlight: Impacting Communities and West Kenya</h4>
+        <div class="row">
+            <!-- Volunteer 1 -->
+            <div class="col-md-4">
+                <div class="volunteer-photo">
+                    <img src="images/wkpi_4.JPG" alt="Volunteer 1">
+                </div>
+                <p><b>Jane Doe</b><br>Volunteer in Child Education Initiatives</p>
+                <p>Jane has made a significant impact in the communities of West Kenya by providing education to children in remote areas, opening doors to a brighter future and breaking the cycle of poverty. Her dedication has touched many lives, ensuring children have access to quality education and better opportunities.</p>
+            </div>
+            <!-- Volunteer 2 -->
+            <div class="col-md-4">
+                <div class="volunteer-photo">
+                    <img src="images/wkpi_5.JPG" alt="Volunteer 2">
+                </div>
+                <p><b>John Smith</b><br>Volunteer in Community Peacebuilding and Conflict Resolution</p>
+                <p>John has been instrumental in fostering peace and resolving conflicts within communities, working alongside locals to promote unity and understanding. His efforts have helped strengthen relationships, promote tolerance, and create peaceful environments for future generations.</p>
+            </div>
+            <!-- Volunteer 3 -->
+            <div class="col-md-4">
+                <div class="volunteer-photo">
+                    <img src="images/wkpi_6.JPG" alt="Volunteer 3">
+                </div>
+                <p><b>Emily Johnson</b><br>Volunteer in Health and Nutrition Programs</p>
+                <p>Emily’s contribution to health and nutrition initiatives has had a profound impact on the well-being of communities across West Kenya. By providing education on nutrition and improving access to healthcare, she has helped improve the lives of many, empowering them to make healthier choices for themselves and their families.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+     <!-- Statistics Section -->
+     <section class="statistics-section" style="background-color: #f1f1f1; padding: 40px 20px; text-align: center;">
+        <div class="container">
+            <h4>Our Impact in Numbers</h4>
+            <div class="row">
+                <!-- Statistic 1 -->
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <h5>Children Impacted</h5>
+                        <p class="stat-number">1000+</p>
+                    </div>
+                </div>
+                <!-- Statistic 2 -->
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <h5>Coomunities Reached</h5>
+                        <p class="stat-number">200+</p>
+                    </div>
+                </div>
+                <!-- Statistic 3 -->
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <h5>Schools Supported</h5>
+                        <p class="stat-number">20+</p>
+                    </div>
+                </div>
+                <!-- Statistic 4 -->
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <h5>Hopsitals Supported</h5>
+                        <p class="stat-number">10+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add some CSS for styling -->
+    <style>
+        .statistics-section .stat-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .statistics-section h4 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .stat-card h5 {
+            font-size: 1.2rem;
+            color: #6f42c1;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #28a745;
+        }
+    </style>
+
+ <!-- Feedback Section -->
+<section class="feedback-section py-4">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h5 class="mb-3 text-center">We Value Your Feedback</h5>
+                <form action="mailto:ads@ads-nyanza.org" method="post" enctype="text/plain" class="p-4 shadow-sm rounded bg-white">
+                    <div class="form-row">
+                        <!-- Name Field -->
+                        <div class="form-group col-md-6">
+                            <label for="inputName">Name</label>
+                            <input type="text" class="form-control" id="inputName" name="name" placeholder="Your name" required>
+                        </div>
+                        <!-- Email Field -->
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <!-- Phone Field -->
+                        <div class="form-group col-md-6">
+                            <label for="inputPhone">Phone</label>
+                            <input type="tel" class="form-control" id="inputPhone" name="phone" placeholder="Your phone">
+                        </div>
+                    </div>
+                    <!-- Feedback Field -->
+                    <div class="form-group">
+                        <label for="inputFeedback">Feedback</label>
+                        <textarea class="form-control" id="inputFeedback" name="feedback" rows="3" placeholder="Your feedback..." required></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary btn-block mt-3">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<style>
+    /* Footer Styles */
+    footer {
+        background-color: #28a745;
+        color: white;
+        padding: 2px 0;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    footer a:hover {
+        color: #d4edda;
+    }
+
+    .social-icons a {
+        font-size: 24px;
+        margin-right: 15px;
+        color: white;
+        transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-icons a:hover {
+        transform: scale(1.2);
+        color: #d4edda;
+    }
+
+    /* Footer Bottom Text */
+    .footer-bottom p {
+        font-size: 11px;
+    }
+</style>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <!-- Location, Phone & Email Section -->
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3 text-uppercase font-weight-bold">Location</h5>
+                <p><i class="fas fa-map-marker-alt"></i> St. Peters Church Milimani, Along Omolo Agar Road, Kisumu, Kenya</p>
+                <p><i class="fas fa-phone-alt"></i> +254 726947044</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:ads@ads-nyanza.org">ads@ads-nyanza.org</a></p>
+            </div>
+
+            <!-- Useful Links Section -->
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3 text-uppercase font-weight-bold">Useful Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" onmouseover="hoverLink(this)" onmouseout="unhoverLink(this)">Careers</a></li>
+                    <li><a href="https://ess.ads-nyanza.org/login" onmouseover="hoverLink(this)" onmouseout="unhoverLink(this)">Staff Portal</a></li>
+                </ul>
+            </div>
+
+            <!-- Follow Us Section -->
+            <div class="col-md-4">
+                <h5 class="mb-3 text-uppercase font-weight-bold">Follow Us</h5>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom mt-4 text-center">
+            <p>&copy; 2024 ADS Nyanza. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Hover effect for links
+    function hoverLink(element) {
+        element.style.textDecoration = "underline";
+        element.style.color = "#d4edda";
+    }
+
+    function unhoverLink(element) {
+        element.style.textDecoration = "none";
+        element.style.color = "white";
+    }
+</script>
+  
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

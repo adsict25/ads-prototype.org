@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADS NYANZA - Our Approach</title>
+    
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+
+    <!-- Include Stylesheets -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-wrap {
+            background-image: url('images/2.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-wrap .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .breadcrumbs {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        /* Our Approach Section */
+        .approach-section {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+
+        .approach-section .heading-section h2 {
+            color: #28a745; /* ADS green */
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .approach-section .heading-section p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        /* Card Styles */
+        .approach-step {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            opacity: 1; /* Removed fade effect */
+        }
+
+        .approach-step img {
+            width: 200px; /* Increased image size */
+            height: 200px; /* Increased image size */
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .approach-step .icon {
+            font-size: 3rem;
+            color: #28a745; /* ADS green */
+            margin-bottom: 20px;
+        }
+
+        .approach-step h3 {
+            font-size: 1.5rem;
+            color: #28a745; /* ADS green */
+            margin-bottom: 10px;
+        }
+
+        .approach-step p {
+            font-size: 1.1rem;
+            color: #6f42c1; /* ADS purple */
+        }
+
+        /* End Notification */
+        .end-notification {
+            display: none;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.5rem;
+            color: #28a745;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar bg-light py-2 border-bottom">
+          <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo Section -->
+            <div>
+              <a href="index.html">
+                <img src="images/ads.png" alt="ADS Logo" style="height: 100px;">
+              </a>
+            </div>
+      
+            <!-- Language Dropdown -->
+            <div class="dropdown">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/uk.jpg" alt="English" style="height: 20px; margin-right: 5px;"> English
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('german')"><img src="images/german.png" alt="German" style="height: 20px; margin-right: 5px;"> German</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('french')"><img src="images/french.png" alt="French" style="height: 20px; margin-right: 5px;"> French</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('italian')"><img src="images/italian.png" alt="Italian" style="height: 20px; margin-right: 5px;"> Italian</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('spanish')"><img src="images/spanish.png" alt="Spanish" style="height: 20px; margin-right: 5px;"> Spanish</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('dutch')"><img src="images/dutch.jpg" alt="Dutch" style="height: 20px; margin-right: 5px;"> Dutch</a></li>
+              </ul>
+            </div>
+      
+            <!-- Social Media Icons -->
+            <div>
+              <a href="https://www.facebook.com/people/ADS-Nyanza/61557946673947/" class="text-secondary mx-2"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://x.com/Ads_Nyanza" class="text-secondary mx-2"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/adsnyanza/" class="text-secondary mx-2"><i class="fab fa-instagram"></i></a>
+              <a href="http://www.youtube.com/@ADS-NYANZA" class="text-secondary mx-2"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.linkedin.com/in/ads-nyanza-aa998b2b6/" class="text-secondary mx-2"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4CAF50;">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white font-weight-bold">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link text-white font-weight-bold">About Us</a></li>
+                <li class="nav-item dropdown">
+                  <a href="" class="nav-link dropdown-toggle text-white font-weight-bold" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="ecd.html">Early Childhood Development</a></li>
+                    <li><a class="dropdown-item" href="gf.html">Global Fund</a></li>
+                    <li><a class="dropdown-item" href="wkpi.html">West Kenya Peace Initiative</a></li>
+                    <li><a class="dropdown-item" href="icrp.html">Integrated Climate Resileince Project</a></li>
+                    <li><a class="dropdown-item" href="emergency.html">Emergency Response</a></li>
+                    <li><a class="dropdown-item" href="pesps.html">Peoples Empowerment & Sustainability Project</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="periodicals.html" class="nav-link text-white font-weight-bold">Periodicals</a></li>
+                <li class="nav-item"><a href="get-involved.html" class="nav-link text-white font-weight-bold">Get Involved</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link text-white font-weight-bold">Contact Us</a></li>
+                <li class="nav-item"><a href="https://ess.ads-nyanza.org/login" class="nav-link text-white font-weight-bold">Staff Portal</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+      
+    <!-- END nav -->
+    
+    <style>
+      /* CSS for dynamic color and boldness */
+      .dynamic-color {
+        color: #f5e8f5; /* Light color for good contrast with the greenish background */
+        transition: color 0.3s ease-in-out;
+      }
+    
+      .dynamic-color:hover {
+        color: #81c784; /* Brighter green to create a dynamic hover effect */
+      }
+    
+      .font-weight-bold {
+        font-weight: 700; /* Ensures text is bold */
+      }
+    </style>
+    
+
+    <!-- Hero Section -->
+    <div class="hero-wrap">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+                <div class="col-md-7 ftco-animate text-center">
+                    <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Home</a></span> <span>Our Approach</span></p>
+                    <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Our Approach</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Approach Section -->
+    <section class="approach-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section text-center">
+                    <h2>Our Approach</h2>
+                    <p>At ADS Nyanza, we implement a community-driven, sustainable approach. Our steps are designed to ensure the long-term empowerment of the communities we serve, creating a better future for all.</p>
+                </div>
+            </div>
+
+        <!-- Our Approach Steps -->
+        <div class="row">
+            <!-- Step 1: Identification -->
+            <div class="col-lg-4 d-flex mb-sm-4">
+                <div class="approach-step">
+                    <img src="images/app1.JPG" alt="Identification">
+                    <div class="icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Identification</h3>
+                    <p>We identify communities in need, focusing on underserved areas with the potential for growth and sustainability.</p>
+                </div>
+            </div>
+            
+            <!-- Step 2: Validation -->
+            <div class="col-lg-4 d-flex mb-sm-4">
+                <div class="approach-step">
+                    <img src="images/app2.JPG" alt="Validation">
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Validation</h3>
+                    <p>We validate the need through comprehensive research and engage the community to confirm priorities.</p>
+                </div>
+            </div>
+
+            <!-- Step 3: Holistic Approach -->
+            <div class="col-lg-4 d-flex mb-sm-4">
+                <div class="approach-step">
+                    <img src="images/app3.JPG" alt="Holistic Approach">
+                    <div class="icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Holistic Approach</h3>
+                    <p>We develop a long-term, multi-sectoral program tailored to the community's needs, combining health, education, and economic development.</p>
+                </div>
+            </div>
+
+            <!-- Step 4: Services -->
+            <div class="col-lg-4 d-flex mb-sm-4">
+                <div class="approach-step">
+                    <img src="images/app4.JPG" alt="Services">
+                    <div class="icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Services</h3>
+                    <p>We provide services that foster community ownership, focusing on locally-driven solutions for sustainable development.</p>
+                </div>
+            </div>
+
+            <!-- Step 5: Growth -->
+            <div class="col-lg-4 d-flex mb-sm-4">
+                <div class="approach-step">
+                    <img src="images/app5.JPG" alt="Growth">
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Growth</h3>
+                    <p>Our programs aim for self-sufficiency and long-lasting impacts, empowering the community to thrive independently.</p>
+                </div>
+            </div>
+
+            <!-- Step 6: Engagement -->
+            <div class="col-lg-4 d-flex mb-sm-4">
+                <div class="approach-step">
+                    <img src="images/app6.JPG" alt="Engagement">
+                    <div class="icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Engagement</h3>
+                    <p>We nurture partnerships with volunteers, stakeholders, and the community, ensuring sustained impact and collaboration.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Notification -->
+<div class="end-notification" id="endNotification">
+    <p>You've reached the end of the approach steps!</p>
+</div>
+
+
+    <!-- Include Bootstrap and Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Show step every 5 seconds
+        let currentIndex = 0;
+        const steps = document.querySelectorAll('.approach-step');
+
+        function showStep() {
+            steps.forEach((step, index) => {
+                step.classList.remove('active');
+                if (index === currentIndex) {
+                    step.classList.add('active');
+                }
+            });
+
+            currentIndex = (currentIndex + 1) % steps.length;
+
+            // If reached the end
+            if (currentIndex === 0) {
+                document.getElementById('endNotification').style.display = 'block';
+            } else {
+                document.getElementById('endNotification').style.display = 'none';
+            }
+        }
+
+        setInterval(showStep, 5000); // Change step every 5 seconds
+        showStep(); // Initialize first step
+    </script>
+</body>
+</html>

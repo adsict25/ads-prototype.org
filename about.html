@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ADS NYANZA - About Us</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/ads.jpg') }}">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;700&family=Overpass:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      /* Custom Styles */
+      body {
+        font-family: 'Overpass', sans-serif;
+        line-height: 1.6;
+      }
+      .hero-wrap {
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+      }
+      .hero-wrap .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      .navbar {
+        background-color: #4CAF50;
+        font-weight: light;
+      }
+      .navbar-nav .nav-link {
+        color: white;
+        transition: color 0.3s ease;
+      }
+      .navbar-nav .nav-link:hover {
+        color: #00b894;
+      }
+      .dropdown-menu {
+        background-color: #4CAF50;
+      }
+      .dropdown-item {
+        color: white;
+      }
+      .dropdown-item:hover {
+        background-color: #45a049;
+        color: white;
+      }
+      .social-media-icons a {
+        color: #333;
+        margin: 0 10px;
+        font-size: 18px;
+        transition: color 0.3s ease;
+      }
+      .social-media-icons a:hover {
+        color: #4CAF50;
+      }
+      .top-bar {
+        padding: 8px 0;
+        background-color: #f8f9fa;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Header Section -->
+    <header>
+      <!-- Top Bar -->
+      <div class="top-bar bg-light py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+          <!-- Logo Section -->
+          <div>
+            <a href="index.html">
+              <img src="images/ads.png" alt="ADS Logo" style="height: 80px;">
+            </a>
+          </div>
+
+          <!-- Language Dropdown -->
+          <div class="dropdown">
+            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="images/uk.jpg" alt="English" style="height: 20px; margin-right: 5px;"> English
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item" href="#" onclick="setLanguage('german')"><img src="images/german.png" alt="German" style="height: 20px; margin-right: 5px;"> German</a></li>
+              <li><a class="dropdown-item" href="#" onclick="setLanguage('french')"><img src="images/french.png" alt="French" style="height: 20px; margin-right: 5px;"> French</a></li>
+              <li><a class="dropdown-item" href="#" onclick="setLanguage('italian')"><img src="images/italian.png" alt="Italian" style="height: 20px; margin-right: 5px;"> Italian</a></li>
+              <li><a class="dropdown-item" href="#" onclick="setLanguage('spanish')"><img src="images/spanish.png" alt="Spanish" style="height: 20px; margin-right: 5px;"> Spanish</a></li>
+              <li><a class="dropdown-item" href="#" onclick="setLanguage('dutch')"><img src="images/dutch.jpg" alt="Dutch" style="height: 20px; margin-right: 5px;"> Dutch</a></li>
+            </ul>
+          </div>
+
+          <!-- Social Media Icons -->
+          <div class="social-media-icons">
+            <a href="https://www.facebook.com/people/ADS-Nyanza/61557946673947/" class="mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/Ads_Nyanza" class="mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/adsnyanza/" class="mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="http://www.youtube.com/@ADS-NYANZA" class="mx-2"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/ads-nyanza-aa998b2b6/" class="mx-2"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+              <li class="nav-item active"><a href="about.html" class="nav-link text-white">About Us</a></li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle text-white" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="ecd.html">Early Childhood Development</a></li>
+                  <li><a class="dropdown-item" href="gf.html">Global Fund</a></li>
+                  <li><a class="dropdown-item" href="wkpi.html">West Kenya Peace Initiative</a></li>
+                  <li><a class="dropdown-item" href="icrp.html">Integrated Climate Resilience Project</a></li>
+                  <li><a class="dropdown-item" href="emergency.html">Emergency Response</a></li>
+                  <li><a class="dropdown-item" href="pesps.html">Peoples Empowerment & Sustainability Project</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="periodicals.html" class="nav-link text-white">Periodicals</a></li>
+              <li class="nav-item"><a href="get-involved.html" class="nav-link text-white">Get Involved</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link text-white">Contact Us</a></li>
+              <li class="nav-item"><a href="https://ess.ads-nyanza.org/login" class="nav-link text-white">Staff Portal</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero-wrap" style="background-image: url('images/team1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-7 text-center">
+            <h1 class="mb-4" style="color: #00b894;"></h1>
+            <h2 style="color: #6c5ce7;"> </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript for Language Switch -->
+    <script>
+      function setLanguage(language) {
+        alert(`Switching to ${language}...`);
+      }
+    </script>
+
+    
+<section class="ftco-section">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <!-- Full Width Image Section on the Left -->
+            <div class="col-md-6 d-flex ftco-animate">
+                <div class="img img-about align-self-stretch" style="background-image: url('images/milistone.png'); background-size: cover; background-position: center; width: 100%; height: 400px; cursor: pointer;" onclick="openModal();"></div>
+            </div>
+            
+            <!-- Text Section on the Right -->
+            <div class="col-md-6 pl-md-5 ftco-animate">
+                <h2 class="mb-4 text-primary font-weight-bold">ADS Nyanza History</h2>
+                <p>
+                    ADS Nyanza traces its roots back to 1975 when the Anglican Church of Kenya (ACK) Diocese of Maseno South launched the Integrated Rural Development Program (IRDP). This pioneering initiative aimed to promote holistic community well-being by focusing on key areas such as community health, food production, appropriate technology, and education.
+                </p>
+                <p>
+                    In 1981, the Church of the Province of Kenya (CPK) established the Provincial Board of Christian Community Services (PBCCS), which laid the groundwork for a church-led development agenda. By May 1983, PBCCS organized a consultative meeting to expand the church’s ministry, ensuring that its reach encompassed both rural and urban poor communities. 
+                    <a href="#" class="read-more" onclick="toggleReadMore(event, this)">Read More</a>
+                </p>
+                <div class="hidden-content" style="display: none;">
+                    <p>
+                        This led to the establishment of the Christian Community Services (CCS), which became the church's dedicated development arm. CCS took on the dual role of fostering program development and delivering essential services, while raising critical awareness about societal issues affecting communities.
+                    </p>
+                    <p>
+                        Recognizing the need for more integrated and collaborative approaches, the various Diocesan Development Departments merged into broader regional platforms. This culminated in the formation of Inter-Diocesan Christian Community Services (IDCCS) in 1997, a milestone that united development efforts across multiple dioceses.
+                    </p>
+                    <p>
+                        In 2010, IDCCS underwent a rebranding process, emerging as ADS Nyanza, a name that reflects its commitment to sustainable development and community transformation. Over the decades, ADS Nyanza has consistently championed transformational human development, advocating for equity in the sharing of God’s abundant resources. Through innovative programs and strategic partnerships, the organization continues to empower communities, improve livelihoods, and build a sustainable future for all.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for Image Zoom -->
+<div id="imageModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal();">&times;</span>
+        <img src="images/milistone.png" alt="Milestone Image" style="width: 100%; height: auto;">
+    </div>
+</div>
+
+<script>
+    // Open the modal
+    function openModal() {
+        document.getElementById('imageModal').style.display = 'block';
+    }
+
+    // Close the modal
+    function closeModal() {
+        document.getElementById('imageModal').style.display = 'none';
+    }
+
+    // Toggle Read More functionality
+    function toggleReadMore(event, element) {
+        const hiddenContent = element.closest('p').nextElementSibling;
+        const isHidden = hiddenContent.style.display === 'none';
+
+        hiddenContent.style.display = isHidden ? 'block' : 'none';
+        element.innerText = isHidden ? 'Read Less' : 'Read More';
+    }
+</script>
+
+<!-- Modal Styles -->
+<style>
+    .modal {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+
+    .modal-content {
+        position: relative;
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+        cursor: pointer;
+    }
+</style>
+
+<!-- Responsive Styles -->
+<style>
+    @media (max-width: 768px) {
+        .row {
+            flex-direction: column; /* Stack text below the image on smaller screens */
+        }
+        .img-about {
+            height: 250px; /* Adjust the height of the image on small screens */
+        }
+    }
+</style>
+
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #fff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            opacity: 0;
+            transform: translateY(100px);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-icon {
+            font-size: 50px;
+            color: #28a745; /* Green theme */
+            margin-bottom: 15px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .card .btn {
+            background-color: #28a745;
+            color: white;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .card .btn:hover {
+            background-color: #1e7e34;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="ftco-counter ftco-intro ftco-intro-2" id="section-counter">
+        <div class="container">
+            <div class="row">
+                <!-- Card 1: Our Approach -->
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Our Approach</h3>
+                          <p class="card-text">
+                              We combine innovation, collaboration, and sustainable practices to create lasting impact in the communities we serve.
+                          </p>
+                          <!-- Updated Link to 'approach.html' -->
+                          <li class="nav-item"><a href="approach.html" class="nav-link"class="btn">Learn More</a></li>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                <!-- Card 2: What We Do -->
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-people-carry"></i>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">What We Do</h3>
+                            <p class="card-text">
+                                We implement programs in health, education, economic empowerment, and climate resilience to transform lives sustainably.
+                            </p>
+                            <li class="nav-item"><a href="programs.html" class="nav-link"class="btn">Learn More</a></li>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Where We Work -->
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Where We Work</h3>
+                            <p class="card-text">
+                                We work across Nyanza and Western Kenya, reaching over 100 communities with impactful solutions.
+                            </p>
+                            <li class="nav-item"><a href="location.html" class="nav-link"class="btn">Learn More</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling to sections when buttons are clicked
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function (event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 50,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // On-scroll animation for cards
+        window.addEventListener('scroll', function () {
+            const cards = document.querySelectorAll('.card');
+            const triggerBottom = window.innerHeight / 1.3;
+
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                if (cardTop < triggerBottom) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(100px)';
+                }
+            });
+        });
+        
+    </script>
+  
+  
+  <!-- JavaScript -->
+  <script>
+      // Function to Open Modal
+      function openModal(photo, name, position, bio) {
+          document.getElementById('modalPhoto').src = photo;
+          document.getElementById('staffName').innerText = name;
+          document.getElementById('staffPosition').innerText = position;
+          document.getElementById('staffBio').innerText = bio;
+          const modal = new bootstrap.Modal(document.getElementById('staffModal'));
+          modal.show();
+      }
+  </script>
+ 
+ <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    h1, h2 {
+        text-align: center;
+        color: #333;
+        margin-top: 20px;
+    }
+
+    .intro {
+        text-align: center;
+        padding: 10px 20px;
+        color: #555;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .card-section {
+        margin: 20px auto;
+        max-width: 1200px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 220px;
+        text-align: center;
+        padding: 15px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        position: relative;
+        border-top: 5px solid #007bff;
+    }
+
+    .card:nth-child(4n+1) { border-top-color: #007bff; }
+    .card:nth-child(4n+2) { border-top-color: #28a745; }
+    .card:nth-child(4n+3) { border-top-color: #ffc107; }
+    .card:nth-child(4n+4) { border-top-color: #dc3545; }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #333;
+    }
+
+    .card p {
+        color: #777;
+        margin: 5px 0;
+    }
+
+    .card button {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .card button:hover {
+        background: #0056b3;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 500px;
+        width: 90%;
+        text-align: center;
+        position: relative;
+    }
+
+    .modal-content img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .modal-content h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .modal-content p {
+        color: #555;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        color: #333;
+    }
+</style>
+</head>
+<body>
+<h1>Our Leadership</h1>
+<div class="intro">
+    Welcome to the official board of management and board of trustees section for ADS Nyanza. Learn more about the incredible individuals who guide our mission and vision.
+</div>
+
+<h2>Board of Management</h2>
+<div class="card-section" id="management-section">
+    <!-- Cards dynamically injected by JavaScript -->
+</div>
+
+<h2>Board of Trustees</h2>
+<div class="card-section" id="trustees-section">
+    <!-- Cards dynamically injected by JavaScript -->
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-img" src="" alt="Profile Photo">
+        <h3 id="modal-name"></h3>
+        <p id="modal-position"></p>
+        <p id="modal-bio"></p>
+    </div>
+</div>
+
+<script>
+    const managementData = [
+        { name: "The Rt. Rev’d Charles Ochieng Ong’injo", position: "Chairman", bio: "As Chairperson of the ADS Nyanza Board, The Rt. Rev’d Charles Ochieng Ong’injo has led impactful initiatives in community empowerment, including early childhood education, climate resilience, and health programs. Committed to fostering sustainable development, he envisions strengthening partnerships and expanding ADS Nyanza’s reach to create long-lasting change across the region.", img: "images/b1.jpg" },
+        { name: "Mr. Samwel Omondi Ochieng", position: "Secretary", bio: "Mr. Samwel Omondi Ochieng, Secretary to the ADS Nyanza Board and Executive Director, has played a pivotal role in transforming the organization into a regional leader in community empowerment. Under his leadership, ADS Nyanza has fostered a motivated and skilled team, ensuring the successful implementation of impactful programs in early childhood development, climate resilience, health, and emergency response. His focus on operational excellence and collaboration has strengthened partnerships and expanded ADS Nyanza’s reach across the region. Looking ahead, Mr. Omondi envisions scaling up initiatives, fostering innovation, and addressing emerging challenges to empower communities and drive sustainable development throughout the Nyanza region and beyond.", img: "images/b9.jpg" },
+        { name: "CPA Benard Enos Otieno Owuor", position: "Treasurer, Finance & Admin ", bio: "CPA Benard Enos Otieno Owuor serves as the Treasurer for Finance & Admin, demonstrating expertise in financial management and strategic planning to enhance organizational growth and sustainability. With a strong background in accounting, CPA Owuor ensures effective financial oversight, risk management, and compliance. He is committed to driving efficiency and transparency in financial operations.", img: "images/b2.jpg" },
+        { name: "Mrs Nelly Atieno Otieno", position: "Programs Chair", bio: "Mrs. Nelly Atieno Otieno, Programs Chair at ADS Nyanza, oversees impactful community programs, driving success in health, education, and climate resilience. With her leadership, the programs have expanded their reach, and she remains committed to fostering innovation and sustainable solutions to transform lives.", img: "images/b3.jpg" },
+        { name: "The Rt. Rev’d Dr. Canon Joshua Owiti Ouma", position: "Board Member", bio: "JThe Rt. Rev’d Dr. Canon Joshua Owiti Ouma, a dedicated Board Member of ADS Nyanza, brings vast experience in leadership and faith-based initiatives. His guidance ensures the organization’s programs align with values of empowerment and sustainability. Committed to growth, he supports expanding ADS Nyanza’s impact and strengthening partnerships to serve communities better.", img: "images/b5.jpg" },
+        { name: "The Rt. Rev'd Dr. Emily Awino Onyango", position: "Board Member", bio: "The Rt. Rev'd Dr. Emily Awino Onyango, a valued Board Member of ADS Nyanza, leverages her leadership expertise to promote inclusivity and community empowerment. Her dedication to gender equity and sustainable development strengthens the organization’s mission to create lasting regional impact..", img: "images/b6.jpg" },
+        { name: "Dr Angeline Ochung Orwa", position: "Board Member", bio: "Dr. Angeline Ochung Orwa, a dedicated Board Member of ADS Nyanza, brings extensive expertise in healthcare and community development. Her contributions have been pivotal in advancing health-focused initiatives and fostering sustainable solutions to improve community well-being.", img: "images/b6.jpg" },
+        { name: "Mr Fredrick Mito Nyunja", position: "Board Member", bio: "Mr. Fredrick Mito Nyunja, a committed Board Member of ADS Nyanza, brings extensive experience in governance and community development. His strategic insights contribute to strengthening the organization’s programs and fostering sustainable growth in the communities served.", img: "images/b7.jpg" },
+        { name: "Ms Jackline Alurala", position: "Board Member", bio: "Ms. Jackline Alurala, a dedicated Board Member of ADS Nyanza, is known for her expertise in community engagement and development. Her efforts focus on empowering vulnerable groups and enhancing the effectiveness of the organization’s programs to create lasting impact.", img: "images/b8.jpg" },
+        { name: "FCS Jophece Yogo", position: "Board Member", bio: "FCS Jophece Yogo, a distinguished Board Member of ADS Nyanza, brings a wealth of experience in governance and strategic planning. His leadership strengthens organizational frameworks, ensuring effective program implementation and sustainable community impact.", img: "images/b10.jpg" },
+        /* Add more members here */
+    ];
+
+    const trusteesData = [
+        { name: "The Rt. Rev’d Dr. Canon Joshua Owiti Ouma", position: "Bishop :- Maseno East Diocese ", bio: "The Rt. Rev’d Dr. Canon Joshua Owiti Ouma, Bishop of Maseno East Diocese and Trustee of ADS Nyanza, provides visionary leadership and oversight. His commitment to faith-driven development ensures the organization remains focused on its mission of transforming communities through sustainable initiatives.", img: "images/t1.jpg" },
+        { name: "The Rt. Rev’d Prof. David Hellington Kodia", position: "Bishop :- Bondo Diocese", bio: "The Rt. Rev’d Prof. David Hellington Kodia, Bishop of Bondo Diocese and Trustee of ADS Nyanza, combines academic excellence with spiritual leadership to guide impactful community initiatives. His dedication to transformative development ensures sustainable solutions that address the needs of communities across the region.", img: "images/t2.jpg" },
+        { name: "The Rt. Rev’d Charles Ochieng Ong’injo", position: "Bishop :- Maseno South Diocese ", bio: "The Rt. Rev’d Charles Ochieng Ong’injo, Bishop of Maseno South Diocese and Trustee of ADS Nyanza, is a steadfast leader committed to community empowerment. His vision and guidance strengthen the organization’s mission, driving impactful programs that foster sustainable growth and improved livelihoods.", img: "images/t3.jpg" },
+        { name: "The Rt. Rev’d CS John Mark Haung' Godia", position: "Bishop :- Maseno West Diocese", bio: "The Rt. Rev’d CS John Mark Haung' Godia, Bishop of Maseno West Diocese and Trustee of ADS Nyanza, brings a wealth of experience in spiritual and community leadership. His dedication to fostering resilience and empowerment ensures the organization’s initiatives continue to create meaningful and lasting change.", img: "images/t4.jpg" },
+        { name: "The Rt. Rev’d Dr. Simon Edward Onyango", position: "Diocese of Southern Nyanza ", bio: "The Rt. Rev’d Dr. Simon Edward Onyango, Bishop of the Diocese of Southern Nyanza and Trustee of ADS Nyanza, is a visionary leader devoted to holistic community transformation. His leadership strengthens ADS Nyanza’s mission, fostering impactful programs that address pressing regional challenges with sustainable solutions.", img: "images/t5.jpg" },
+        { name: "The Rt. Rev’d John Orina Omangi", position: "Bishop:- Diocese of Upper Southern Nyanza", bio: "The Rt. Rev’d Dr. Simon Edward Onyango, Bishop of the Diocese of Southern Nyanza and Trustee of ADS Nyanza, is a visionary leader devoted to holistic community transformation. His leadership strengthens ADS Nyanza’s mission, fostering impactful programs that address pressing regional challenges with sustainable solutions.", img: "images/t6.jpg" },
+        /* Add more trustees here */
+    ];
+
+    function populateSection(data, sectionId) {
+        const section = document.getElementById(sectionId);
+        data.forEach(member => {
+            const card = document.createElement('div');
+            card.classList.add('card');
+            card.innerHTML = `
+                <h3>${member.name}</h3>
+                <p>${member.position}</p>
+                <button onclick="showModal('${member.name}', '${member.position}', '${member.bio}', '${member.img}')">Read More</button>
+            `;
+            section.appendChild(card);
+        });
+    }
+
+    function showModal(name, position, bio, imgSrc) {
+        document.getElementById('modal-name').innerText = name;
+        document.getElementById('modal-position').innerText = position;
+        document.getElementById('modal-bio').innerText = bio;
+        document.getElementById('modal-img').src = imgSrc;
+        document.getElementById('modal').style.display = 'flex';
+    }
+
+    function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+    }
+
+    // Populate the sections
+    populateSection(managementData, 'management-section');
+    populateSection(trusteesData, 'trustees-section');
+</script>
+  
+
+    <section class="ftco-section bg-light">
+      <div class="container">
+          <div class="row justify-content-center mb-5 pb-3">
+              <div class="col-md-7 heading-section ftco-animate text-center">
+                  <h2 class="mb-4">Meet Our Top-Tier Team</h2>
+                  <p>At ADS Nyanza, our top-tier team of professionals brings diverse expertise and a shared passion for empowering communities and driving sustainable development across the region.</p>
+              </div>
+          </div>
+          <div class="row">
+              <!-- Staff 1 -->
+              <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+                  <div class="staff">
+                      <div class="d-flex mb-4">
+                          <div class="img" style="background-image: url(images/sam.jpg);"></div>
+                          <div class="info ml-4">
+                              <h3><a href="#" data-toggle="modal" data-target="#staffModal" 
+                                     data-name="Mr. Samuel Omondi" 
+                                     data-position="Executive Manager" 
+                                     data-bio="Mr. Samuel Omondi has over 25 years of experience in leadership and management. He oversees all strategic decisions in the organization to ensure our goals align with the community's needs.">Mr. Samuel Omondi</a></h3>
+                              <span class="position">Executive Manager</span>
+                              <p><a href="#" data-toggle="modal" data-target="#staffModal" 
+                                     data-name="Mr. Samuel Omondi" 
+                                     data-position="Executive Manager" 
+                                     data-bio="Mr. Samuel Omondi has over 25 years of experience in leadership and management. He oversees all strategic decisions in the organization to ensure our goals align with the community's needs.">View Staff</a></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Staff 2 -->
+              <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+                  <div class="staff">
+                      <div class="d-flex mb-4">
+                          <div class="img" style="background-image: url(images/nick.jpg);"></div>
+                          <div class="info ml-4">
+                              <h3><a href="#" data-toggle="modal" data-target="#staffModal" 
+                                     data-name="Mr. Nicholas Nyesi" 
+                                     data-position="Finance and Adminstration Manager" 
+                                     data-bio="Mr. Nicholas Nyesi is an experienced finance professional responsible for managing budgeting, financial planning, and resource allocation at ADS Nyanza. He also oversees administrative functions, ensuring efficient operations that support the organization’s community development goals.">Mr. Nicholas Nyesi</a></h3>
+                              <span class="position">Finance and Adminstration Manager</span>
+                              <p><a href="#" data-toggle="modal" data-target="#staffModal" 
+                                     data-name="Mr. Nicholas Nyesi" 
+                                     data-position="Finance and Adminstration Manager" 
+                                     data-bio="Mr. Nicholas Nyesi is an experienced finance professional responsible for managing budgeting, financial planning, and resource allocation at ADS Nyanza. He also oversees administrative functions, ensuring efficient operations that support the organization’s community development goals.">View Staff</a></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Staff 3 -->
+              <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+                  <div class="staff">
+                      <div class="d-flex mb-4">
+                          <div class="img" style="background-image: url(images/tobias.jpg);"></div>
+                          <div class="info ml-4">
+                              <h3><a href="#" data-toggle="modal" data-target="#staffModal" 
+                                     data-name="Mr. Tobias Aulo" 
+                                     data-position="Programs Manager" 
+                                     data-bio="Mr. Tobias Aulo is an experienced Programs Manager responsible for overseeing the planning, execution, and management of all projects at ADS Nyanza. He ensures the successful implementation of programs, working to achieve the organization’s mission of community empowerment and sustainable development.">Mr. Tobias Aulo</a></h3>
+                              <span class="position">Programs Manager</span>
+                              <p><a href="#" data-toggle="modal" data-target="#staffModal" 
+                                     data-name="Mr. Tobias Aulo" 
+                                     data-position="Programs Manager" 
+                                     data-bio="Mr. Tobias Aulo is an experienced Programs Manager responsible for overseeing the planning, execution, and management of all projects at ADS Nyanza. He ensures the successful implementation of programs, working to achieve the organization’s mission of community empowerment and sustainable development.">View Staff</a></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+            <!-- Staff 3 -->
+            <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+              <div class="staff">
+                  <div class="d-flex mb-4">
+                      <div class="img" style="background-image: url(images/0.jpg);"></div>
+                      <div class="info ml-4">
+                          <h3><a href="#" data-toggle="modal" data-target="#staffModal" 
+                                 data-name="Mr. Gordons Abwajoh" 
+                                 data-position="Programs Manager" 
+                                 data-bio= "Mr.Gordons Abwajoh, a dedicated Project Coordinator at ADS Nyanza, specializes in Climate Resilience and Household Economic Strengthening. He plays a pivotal role in planning, coordinating, and implementing projects that empower communities to adapt to environmental challenges and achieve sustainable economic growth.">Mr. Gordons Abwajoh</a></h3>
+                          <span class="position">Project Cordinator -: Climate Resileince</span>
+                          <p><a href="#" data-toggle="modal" data-target="#staffModal" 
+                                 data-name="Mr. Gordons Abwajoh" 
+                                 data-position="Project Coordinator" 
+                                 data-bio="Mr.Gordons Abwajoh, a dedicated Project Coordinator at ADS Nyanza, specializes in Climate Resilience and Household Economic Strengthening. He plays a pivotal role in planning, coordinating, and implementing projects that empower communities to adapt to environmental challenges and achieve sustainable economic growth.">View Staff</a></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Staff 3 -->
+          <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+            <div class="staff">
+                <div class="d-flex mb-4">
+                    <div class="img" style="background-image: url(images/0.jpg);"></div>
+                    <div class="info ml-4">
+                        <h3><a href="#" data-toggle="modal" data-target="#staffModal" 
+                               data-name="Mr. Charlse Ombonya" 
+                               data-position="Project Coordinator" 
+                               data-bio="Mr. Charlse an experienced Project Coordinator responsible for overseeing the planning, execution, and management of all projects at ADS Nyanza. He ensures the successful implementation of programs, working to achieve the organization’s mission of community empowerment and sustainable development.">Mr. Charlse Ombonya</a></h3>
+                        <span class="position">Project Cordinator -: Health and Advocacy</span>
+                        <p><a href="#" data-toggle="modal" data-target="#staffModal" 
+                               data-name="Mr. Charlse Ombonya" 
+                               data-position="Project Coordinator" 
+                               data-bio="Mr. Charlse Ombonya an experienced Project Cordinator in charge of Health and Advocacy for overseeing the planning, execution, and management of all projects at ADS Nyanza. He ensures the successful implementation of programs, working to achieve the organization’s mission of community empowerment and sustainable development.">View Staff</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Staff 3 -->
+        <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+          <div class="staff">
+              <div class="d-flex mb-4">
+                  <div class="img" style="background-image: url(images/0.jpg);"></div>
+                  <div class="info ml-4">
+                      <h3><a href="#" data-toggle="modal" data-target="#staffModal" 
+                             data-name="Mrs. Janet Adisa" 
+                             data-position="Project Coordinator" 
+                             data-bio="Mrs Janet Adisa is an experienced Programs Manager responsible for overseeing the planning, execution, and management of all projects at ADS Nyanza. He ensures the successful implementation of programs, working to achieve the organization’s mission of community empowerment and sustainable development.">Mrs. Janet Adisa</a></h3>
+                      <span class="position">Project Coordinator</span>
+                      <p><a href="#" data-toggle="modal" data-target="#staffModal" 
+                             data-name="Mrs Janet Adisa" 
+                             data-position="Project Coordinator" 
+                             data-bio="Mrs. Janet Adisa-.">View Staff</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Staff 4 -->
+      <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+        <div class="staff">
+            <div class="d-flex mb-4">
+                <div class="img" style="background-image: url(images/0.jpg);"></div>
+                <div class="info ml-4">
+                    <h3><a href="#" data-toggle="modal" data-target="#staffModal" 
+                           data-name="Mr. George Nyamour" 
+                           data-position="Monitoring and Evaluation" 
+                           data-bio="Mr. George Nyamour .">Mr. George Nyamour</a></h3>
+                    <span class="position">Monitoring and Evaluation Officer</span>
+                    <p><a href="#" data-toggle="modal" data-target="#staffModal" 
+                           data-name="Mr. George Nyamour" 
+                           data-position="Monitoring and Evaluation" 
+                           data-bio="Mr. George Nyamour, Monitoring and Evaluation Officer at ADS Nyanza, plays a crucial role in tracking the organization’s progress and ensuring the effectiveness of its programs. Through his expertise, he provides data-driven insights that guide impactful decision-making, enhancing program delivery and fostering sustainable community development.">View Staff</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Staff 4 
+    <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+      <div class="staff">
+          <div class="d-flex mb-4">
+              <div class="img" style="background-image: url(images/tobias.jpg);"></div>
+              <div class="info ml-4">
+                  <h3><a href="#" data-toggle="modal" data-target="#staffModal" 
+                         data-name="Mr. Tobias Aulo" 
+                         data-position="Programs Manager" 
+                         data-bio="Mr. Tobias Aulo is an experienced Programs Manager responsible for overseeing the planning, execution, and management of all projects at ADS Nyanza. He ensures the successful implementation of programs, working to achieve the organization’s mission of community empowerment and sustainable development.">Mr. Tobias Aulo</a></h3>
+                  <span class="position">Programs Manager</span>
+                  <p><a href="#" data-toggle="modal" data-target="#staffModal" 
+                         data-name="Mr. Tobias Aulo" 
+                         data-position="Programs Manager" 
+                         data-bio="Mr. Tobias Aulo is an experienced Programs Manager responsible for overseeing the planning, execution, and management of all projects at ADS Nyanza. He ensures the successful implementation of programs, working to achieve the organization’s mission of community empowerment and sustainable development.">View Staff</a></p>
+              </div>
+          </div>
+      </div>
+  </div>
+-->
+  
+              <!-- Additional Staff Entries Here... -->
+          </div>
+      </div>
+  
+      <!-- Modal -->
+      <div class="modal fade" id="staffModal" tabindex="-1" role="dialog" aria-labelledby="staffModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="staffModalLabel">Staff Details</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <h3 id="staffName"></h3>
+                      <p id="staffPosition"></p>
+                      <p id="staffBio"></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Bootstrap JS (including jQuery) -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  
+      <script>
+          // When a staff name or "View Staff" link is clicked, the modal updates with the relevant info
+          $('#staffModal').on('show.bs.modal', function (event) {
+              var button = $(event.relatedTarget); // Button that triggered the modal
+              var name = button.data('name');
+              var position = button.data('position');
+              var bio = button.data('bio');
+  
+              var modal = $(this);
+              modal.find('#staffName').text(name);
+              modal.find('#staffPosition').text(position);
+              modal.find('#staffBio').text(bio);
+          });
+      </script>
+  </section>
+  
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+     
+      /* Footer Styles */
+      footer {
+          background-color: #28a745;
+          color: white;
+          padding: 2px 0;
+      }
+  
+      footer a {
+          color: white;
+          text-decoration: none;
+          transition: color 0.3s;
+      }
+  
+      footer a:hover {
+          color: #d4edda;
+      }
+  
+      .social-icons a {
+          font-size: 24px;
+          margin-right: 15px;
+          color: white;
+          transition: transform 0.3s, color 0.3s;
+      }
+  
+      .social-icons a:hover {
+          transform: scale(1.2);
+          color: #d4edda;
+      }
+  
+      /* Footer Bottom Text */
+      .footer-bottom p {
+          font-size: 11px;
+      }
+  </style>
+  
+  <footer>
+      <div class="container">
+          <div class="row">
+              <!-- Location, Phone & Email Section -->
+              <div class="col-md-4 mb-4">
+                  <h5 class="mb-3 text-uppercase font-weight-bold">Location</h5>
+                  <p><i class="fas fa-map-marker-alt"></i> St. Peters Church Milimani, Along Omolo Agar Road, Kisumu, Kenya</p>
+                  <p><i class="fas fa-phone-alt"></i> +254 726947044</p>
+                  <p><i class="fas fa-envelope"></i> <a href="mailto:ads@ads-nyanza.org">ads@ads-nyanza.org</a></p>
+              </div>
+  
+              <!-- Useful Links Section -->
+              <div class="col-md-4 mb-4">
+                  <h5 class="mb-3 text-uppercase font-weight-bold">Useful Links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#" onmouseover="hoverLink(this)" onmouseout="unhoverLink(this)">Careers</a></li>
+                      <li><a href="https://ess.ads-nyanza.org/login" onmouseover="hoverLink(this)" onmouseout="unhoverLink(this)">Staff Portal</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Follow Us Section -->
+              <div class="col-md-4">
+                  <h5 class="mb-3 text-uppercase font-weight-bold">Follow Us</h5>
+                  <div class="social-icons">
+                      <a href="https://www.facebook.com/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.linkedin.com/company/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                      <a href="https://www.instagram.com/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.youtube.com/channel/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+                  </div>
+              </div>
+          </div>
+          <!-- Footer Bottom -->
+          <div class="footer-bottom mt-4 text-center">
+              <p>&copy; 2024 ADS Nyanza. All Rights Reserved.</p>
+          </div>
+      </div>
+  </footer>
+  
+  <script>
+      // Hover effect for links
+      function hoverLink(element) {
+          element.style.textDecoration = "underline";
+          element.style.color = "#d4edda";
+      }
+  
+      function unhoverLink(element) {
+          element.style.textDecoration = "none";
+          element.style.color = "white";
+      }
+  </script>
+  
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="24px" height="24px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

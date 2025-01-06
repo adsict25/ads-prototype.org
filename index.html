@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ADS NYANZA</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/ads.jpg') }}">
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    
+  </head>
+  <body>
+    
+    <header>
+      <!-- Top Bar -->
+      <div class="top-bar bg-light py-2 border-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+          <!-- Logo Section -->
+          <div>
+            <a href="index.html">
+              <img src="images/ads.png" alt="ADS Logo" style="height: 100px;">
+            </a>
+          </div>
+    
+          <!-- Language Dropdown -->
+          <div class="dropdown">
+            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="images/uk.jpg" alt="English" style="height: 20px; margin-right: 5px;"> English
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item" href="#" onclick="setLanguage('german')"><img src="images/german.png" alt="German" style="height: 20px; margin-right: 5px;"> German</a></li>
+              <li><a class="dropdown-item" href="#" onclick="setLanguage('french')"><img src="images/french.png" alt="French" style="height: 20px; margin-right: 5px;"> French</a></li>
+              <li><a class="dropdown-item" href="#" onclick="setLanguage('italian')"><img src="images/italian.png" alt="Italian" style="height: 20px; margin-right: 5px;"> Italian</a></li>
+              <li><a class="dropdown-item" href="#" onclick="setLanguage('spanish')"><img src="images/spanish.png" alt="Spanish" style="height: 20px; margin-right: 5px;"> Spanish</a></li>
+              <li><a class="dropdown-item" href="#" onclick="setLanguage('dutch')"><img src="images/dutch.jpg" alt="Dutch" style="height: 20px; margin-right: 5px;"> Dutch</a></li>
+            </ul>
+          </div>
+    
+          <!-- Social Media Icons -->
+          <div>
+            <a href="https://www.facebook.com/people/ADS-Nyanza/61557946673947/" class="text-secondary mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/Ads_Nyanza" class="text-secondary mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/adsnyanza/" class="text-secondary mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="http://www.youtube.com/@ADS-NYANZA" class="text-secondary mx-2"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/ads-nyanza-aa998b2b6/" class="text-secondary mx-2"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4CAF50;">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link text-white font-weight-bold">Home</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link text-white font-weight-bold">About Us</a></li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle text-white font-weight-bold" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="ecd.html">Early Childhood Development</a></li>
+                  <li><a class="dropdown-item" href="gf.html">Global Fund</a></li>
+                  <li><a class="dropdown-item" href="wkpi.html">West Kenya Peace Initiative</a></li>
+                  <li><a class="dropdown-item" href="icrp.html">Integrated Climate Resileince Project</a></li>
+                  <li><a class="dropdown-item" href="emergency.html">Emergency Response</a></li>
+                  <li><a class="dropdown-item" href="pesps.html">Peoples Empowerment & Sustainability Project</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="periodicals.html" class="nav-link text-white font-weight-bold">Periodicals</a></li>
+              <li class="nav-item"><a href="involve.html" class="nav-link text-white font-weight-bold">Get Involved</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link text-white font-weight-bold">Contact Us</a></li>
+              <li class="nav-item"><a href="https://ess.ads-nyanza.org/login" class="nav-link text-white font-weight-bold">Staff Portal</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <div class="hero-wrap" style="background-image: url('images/team1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-7 text-center">
+            <h1 class="mb-4" style="color: #00b894;"><b> </b></h1>
+            <h2 style="color: #6c5ce7;"> </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      function setLanguage(language) {
+        // Logic to change the language of the entire website
+        // You can implement this with JavaScript or server-side rendering
+        alert(`Switching to ${language}...`);
+        // Example: You might make an API call or reload the page with a language parameter
+      }
+    </script>
+
+<section class="ftco-counter ftco-intro py-5" id="section-counter">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Section 1: Served Over -->
+      <div class="col-md-3">
+        <div class="card text-center shadow border-0" style="background-color: #f5f5f5;">
+          <div class="card-body">
+            <h3 class="card-title text-dark mb-2">Served Over</h3>
+            <h2 class="display-5 text-success fw-bold" id="servedOver" data-number="4000000">0</h2>
+            <p class="text-muted mt-2">Over 500 communities across Nyanza and Western Region in Kenya</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Mission -->
+      <div class="col-md-3">
+        <div class="card text-center shadow border-0" style="background-color: #f5f5f5;">
+          <div class="card-body">
+            <h3 class="card-title text-dark mb-3">Mission</h3>
+            <p class="text-muted">To enable the Dioceses and community within the Nyanza Region to achieve the fullness of life and the integrity of creation through sustainable community development programs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Our Vision -->
+      <div class="col-md-3">
+        <div class="card text-center shadow border-0" style="background-color: #f5f5f5;">
+          <div class="card-body">
+            <h3 class="card-title text-dark mb-3">Our Vision</h3>
+            <p class="text-muted">ADS-Nyanza envisions a dignified, responsible humanity enjoying the fullness of life.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: Core Values -->
+      <div class="col-md-3">
+        <div class="card text-center shadow border-0" style="background-color: #f5f5f5;">
+          <div class="card-body">
+            <h3 class="card-title text-dark mb-3">Our Core Values</h3>
+            <ul class="list-unstyled text-muted">
+              <li><i class="fas fa-check text-success me-2"></i>Christ Centered</li>
+              <li><i class="fas fa-check text-success me-2"></i>Human Dignity</li>
+              <li><i class="fas fa-check text-success me-2"></i>Compassion</li>
+              <li><i class="fas fa-check text-success me-2"></i>Excellence</li>
+              <li><i class="fas fa-check text-success me-2"></i>Stewardship</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Function to animate the counting
+  function animateCounter(element) {
+    let start = 0;
+    let end = parseInt(element.getAttribute('data-number'));
+    let duration = 5000; // Duration in milliseconds (5 seconds)
+    let step = Math.ceil(duration / end);
+    let counter = setInterval(function() {
+      start += 10; // Increase the number by 10 for faster counting
+      element.innerText = start;
+      if (start >= end) {
+        clearInterval(counter);
+        element.innerText = end; // Ensure it reaches the final value
+      }
+    }, step);
+  }
+
+  // Wait until the DOM is fully loaded, then start the counter animation for all counters
+  document.addEventListener('DOMContentLoaded', function() {
+    // Array of elements with the ID of the counters
+    let counters = document.querySelectorAll('[data-number]');
+    counters.forEach(function(counter) {
+      animateCounter(counter);
+    });
+  });
+</script>
+    <section class="ftco-section">
+    	<div class="container">
+    		<div class="row">
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 d-flex services p-3 py-4 d-block">
+              <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Make Donation</h3>
+                <p>Your support makes a difference! By donating, you help us empower communities, improve livelihoods, and drive sustainable development across the Nyanza region. Together, we can create lasting change.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 d-flex services p-3 py-4 d-block">
+              <div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Become A Volunteer</h3>
+                <p>Join our mission to transform lives! As a volunteer, you'll be part of impactful projects ranging from digital agriculture to early childhood development, ensuring a better future for our communities.</p>
+              </div>
+            </div>      
+          </div>
+          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 d-flex services p-3 py-4 d-block">
+              <div class="icon d-flex mb-3"><span class="flaticon-donation"></span></div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Sponsorship</h3>
+                <p>Partner with us to make a lasting impact! Sponsorship helps fund programs like the People's Empowerment for Sustainability Project and other initiatives that promote digital innovation and community growth.</p>
+              </div>
+            </div>    
+          </div>
+        </div>
+    	</div>
+    </section>
+
+
+    <section class="ftco-section bg-light">
+    	<div class="container-fluid">
+    		<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-5 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Our Partners</h2>
+            <p>"Our partners have been instrumental in our past successes, contributing valuable resources, expertise, and unwavering support. Today, their collaboration continues to drive our growth and innovation, and together, we are poised to shape a promising future, creating lasting impact and fostering sustainable progress."</p>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-12 ftco-animate">
+    				<div class="carousel-cause owl-carousel">
+	    				<div class="item">
+	    					<div class="cause-entry">
+		    					<a href="https://www.health.go.ke/" class="img" style="background-image: url(images/kenya.jpg);"></a>
+		    					<div class="text p-3 p-md-4">
+		    						<h3><a href="https://www.health.go.ke/">The Republic of Kenya</a></h3>
+		    						<p>
+                      Collaboration with the Government of Kenya focuses on advancing health initiatives like universal health coverage, reproductive health programs, and early childhood development projects such as "Moments That Matter," strengthening community well-being and resilience.
+                    </p>
+		    						<span class="donation-time mb-3 d-block"></span>
+		                
+		                <span class="fund-raised d-block"></span>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+	    					<div class="cause-entry">
+		    					<a href="https://www.episcopalrelief.org/" class="img" style="background-image: url(images/epi.jpg);"></a>
+		    					<div class="text p-3 p-md-4">
+		    						<h3><a href="https://www.episcopalrelief.org/">Episcopal Relief & Development</a></h3>
+		    						<p>The partnership with Episcopal Relief & Development enhances early childhood development, fosters gender equity through male caregiver engagement, and improves rural resilience with climate-adaptive agriculture</p>
+		    						<span class="donation-time mb-3 d-block"></span>
+		                
+		                <span class="fund-raised d-block"></span>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+	    					<div class="cause-entry">
+		    					<a href="https://www.redcross.or.ke" class="img" style="background-image: url(images/redcross.jpg);"></a>
+		    					<div class="text p-3 p-md-4">
+		    						<h3><a href="https://www.redcross.or.ke/">Kenya RedCross</a></h3>
+		    						<p>The partnership with Kenya Red Cross under the Global Fund's CSS model combats HIV, TB, and malaria while improving maternal health through CHV training, strengthened health systems, and data-driven healthcare solutions.</p>
+		    						<span class="donation-time mb-3 d-block"></span>
+		                
+		                
+		                
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+	    					<div class="cause-entry">
+		    					<a href="https://pwrdf.org/" class="img" style="background-image: url(images/pwrdf.jpg);"></a>
+		    					<div class="text p-3 p-md-4">
+		    						<h3><a href="https://pwrdf.org/">The Primate's World Relief and Development Fund</a></h3>
+		    						<p>
+                      ADS Nyanza, in partnership with PWRDF, enhances food security and livelihoods in Kenya by providing Galla goats to low-income, food-insecure families, fostering sustainable income generation through milk and meat sales, and promoting social inclusion and environmental sustainability</p>
+		    						<span class="donation-time mb-3 d-block"></span>
+		               
+		                  
+		               
+		               
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+	    					<div class="cause-entry">
+		    					<a href="https://www.brot-fuer-die-welt.de/en/bread-for-the-world/" class="img" style="background-image: url(images/broth.jpg);"></a>
+		    					<div class="text p-3 p-md-4">
+		    						<h3><a href="https://www.brot-fuer-die-welt.de/en/bread-for-the-world/">Bread for the World | Brot für die Welt</a></h3>
+		    						<p>ADS Nyanza collaborates with Bread for the World to implement community development projects that focus on food security, gender equality, and climate resilience, empowering marginalized groups and improving livelihoods in rural areas.</p>
+		    						<span class="donation-time mb-3 d-block"></span>
+		                
+		                  
+		                
+		                <span class="fund-raised d-block"></span>
+		    					</div>
+		    				</div>
+	    				</div>
+	    				<div class="item">
+	    					<div class="cause-entry">
+		    					<a href="https://www.hiltonfoundation.org/" class="img" style="background-image: url(images/hilton.jpg);"></a>
+		    					<div class="text p-3 p-md-4">
+		    						<h3><a href="https://www.hiltonfoundation.org/">Hilton Faundation</a></h3>
+		    						<p>ADS Nyanza collaborates with the Hilton Foundation to implement programs that enhance health, education, and sustainable livelihoods in vulnerable rural communities.</p>
+		    						<span class="donation-time mb-3 d-block"></span>
+		                
+		                <span class="fund-raised d-block"></span>
+		    					</div>
+		    				</div>
+	    				</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <h2 class="mb-4">Senior Management Team</h2>
+            <p>At <b>ADS Nyanza</b>, our Senior Management Team drives our mission to deliver exceptional results and maintain our commitment to innovation and excellence. With years of diverse experience in their respective fields, each member brings a wealth of knowledge, passion, and leadership to guide our company forward. Together, they lead with integrity, fostering a culture of growth and collaboration.</p>
+          </div>
+        </div>
+        <div class="row">
+        	<div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+        		<div class="staff">
+        			<div class="d-flex mb-4">
+        				<div class="img" style="background-image: url(images/sam.jpg);"></div>
+        				<div class="info ml-4">
+        					<h3><a href="#">Samuel Omondi</a></h3>
+        					<span class="position">Executive Director</span>
+        					<div class="text">
+		        			
+		        			</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+        		<div class="staff">
+        			<div class="d-flex mb-4">
+        				<div class="img" style="background-image: url(images/nick.jpg);"></div>
+        				<div class="info ml-4">
+        					<h3><a href="teacher-single.html">Nicholas Nyesi</a></h3>
+        					<span class="position">Finance And Adminstration Manager</span>
+        					<div class="text">
+		        			
+		        			</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
+        		<div class="staff">
+        			<div class="d-flex mb-4">
+        				<div class="img" style="background-image: url(images/tobias.jpg);"></div>
+        				<div class="info ml-4">
+        					<h3><a href="teacher-single.html">Tobias Aulo</a></h3>
+        					<span class="position">Programs Manager</span>
+        					<div class="text">
+		        				
+		        			</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-gallery">
+    	<div class="d-md-flex">
+	    	<a href="images/1.JPG" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/1.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/2.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/2.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/3.jpg"class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/3.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/4.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/4.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+    	</div>
+    	<div class="d-md-flex">
+	    	<a href="images/5.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/5.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/6.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/6.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/7.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/7.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    	<a href="images/8.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/8.jpg);">
+	    		<div class="icon d-flex justify-content-center align-items-center">
+	    			<span class="icon-search"></span>
+	    		</div>
+	    	</a>
+	    </div>
+    </section>
+
+    <section class="ftco-section">
+      <div class="container">
+          <div class="row justify-content-center mb-5 pb-3">
+              <div class="col-md-7 heading-section ftco-animate text-center">
+                  <h2 class="mb-4">Our Latest Updates</h2>
+                  <p>"Our Latest Updates" shares milestones, progress, and inspiring stories from ADS Nyanza’s impactful projects.</p>
+              </div>
+          </div>
+          <div class="row d-flex">
+              <!-- Project 1: Moments That Matter (ECD) -->
+              <div class="col-md-4 d-flex ftco-animate">
+                  <div class="blog-entry align-self-stretch">
+                      <a href="ecd.html" class="block-20" style="background-image: url('images/ecd1.jpg');">
+                      </a>
+                      <div class="text p-4 d-block">
+                          <div class="meta mb-3">
+                              <div><a href="#">Dec 12, 2024</a></div>
+                              <div><a href="#">ECD Program</a></div>
+                          </div>
+                          <h3 class="heading mt-3"><a href="ecd.html">Empowering 2,000 Caregivers in Early Childhood Development</a></h3>
+                          <p>The "Moments That Matter" project has successfully reached over 2,000 caregivers, ensuring children aged 0-3 years receive nurturing care, proper nutrition, and medical support.</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Project 2: Integrated Community Resilience Project (ICRP) -->
+              <div class="col-md-4 d-flex ftco-animate">
+                  <div class="blog-entry align-self-stretch">
+                      <a href="icrp.html" class="block-20" style="background-image: url('images/icrp9.jpg');">
+                      </a>
+                      <div class="text p-4 d-block">
+                          <div class="meta mb-3">
+                              <div><a href="#">Nov 25, 2024</a></div>
+                              <div><a href="#">ICRP</a></div>
+                          </div>
+                          <h3 class="heading mt-3"><a href="icrp.html">Strengthening 50 Vulnerable Communities Against Climate Change</a></h3>
+                          <p>The ICRP program has fortified community resilience through climate-smart agriculture, reaching over 3,500 households in climate-affected regions.</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Project 3: Peoples Empowerment for Sustainability Project (PESP) -->
+              <div class="col-md-4 d-flex ftco-animate">
+                  <div class="blog-entry align-self-stretch">
+                      <a href="pesps.html" class="block-20" style="background-image: url('images/peps_6.jpg');">
+                      </a>
+                      <div class="text p-4 d-block">
+                          <div class="meta mb-3">
+                              <div><a href="#">Oct 15, 2024</a></div>
+                              <div><a href="#">PESP</a></div>
+                          </div>
+                          <h3 class="heading mt-3"><a href="pesps.html">Digital Agriculture Training for 10,000 Farmers</a></h3>
+                          <p>Through the PESP project, over 10,000 farmers have been empowered with digital tools like iShamba and Plantix, enhancing productivity and sustainability.</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Project 4: Emergency Response -->
+              <div class="col-md-4 d-flex ftco-animate">
+                  <div class="blog-entry align-self-stretch">
+                      <a href="emergency.html" class="block-20" style="background-image: url('images/bg_5.jpg');">
+                      </a>
+                      <div class="text p-4 d-block">
+                          <div class="meta mb-3">
+                              <div><a href="#">Nov 5, 2024</a></div>
+                              <div><a href="#">Emergency Response</a></div>
+                          </div>
+                          <h3 class="heading mt-3"><a href="emergency.html">Rapid Response to 8,000 Disaster-Affected Individuals</a></h3>
+                          <p>ADS Nyanza's Emergency Response program provided shelter, food, and psychosocial support to over 8,000 people affected by recent floods and emergencies.</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Project 5: West Kenya Peace Initiative -->
+              <div class="col-md-4 d-flex ftco-animate">
+                  <div class="blog-entry align-self-stretch">
+                      <a href="wkpi.html" class="block-20" style="background-image: url('images/wkpi_5.JPG');">
+                      </a>
+                      <div class="text p-4 d-block">
+                          <div class="meta mb-3">
+                              <div><a href="#">Oct 30, 2024</a></div>
+                              <div><a href="#">Peace Initiative</a></div>
+                          </div>
+                          <h3 class="heading mt-3"><a href="wkpi.html">Bridging Communities: Promoting Peace in West Kenya</a></h3>
+                          <p>In 2024, the West Kenya Peace Initiative successfully mediated conflicts in 20 communities, fostering dialogue and reducing tensions.</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Project 6: Global Fund Initiative -->
+              <div class="col-md-4 d-flex ftco-animate">
+                  <div class="blog-entry align-self-stretch">
+                      <a href="gf.html" class="block-20" style="background-image: url('images/gf_6.jpg');">
+                      </a>
+                      <div class="text p-4 d-block">
+                          <div class="meta mb-3">
+                              <div><a href="#">Dec 5, 2024</a></div>
+                              <div><a href="#">Global Fund</a></div>
+                          </div>
+                          <h3 class="heading mt-3"><a href="gf.html">Fighting Malaria: Reaching 1 Million People with Preventive Care</a></h3>
+                          <p>The Global Fund Initiative distributed over 1 million mosquito nets and conducted malaria awareness campaigns, drastically reducing infections in the region.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+  <section class="ftco-section bg-light">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section ftco-animate text-center">
+          <h2 class="mb-4">Our Latest Events</h2>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Event 1 -->
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry align-self-stretch">
+            <a href="#" class="block-20" style="background-image: url('images/ecd_4.JPG');">
+            </a>
+            <div class="text p-4 d-block">
+              <div class="meta mb-3">
+                <div><a href="#">Dec. 20, 2024</a></div>
+                <div><a href="#">ADS Nyanza</a></div>
+                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 12</a></div>
+              </div>
+              <h3 class="heading mb-4"><a href="ecd.html">Early Childhood Development Workshop</a></h3>
+              <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 9:00 AM - 4:00 PM</span> <span><i class="icon-map-o"></i> Kisumu Training Center</span></p>
+              <p>An interactive session to empower caregivers with skills in nutrition, nurturing care, and inclusive caregiving for children aged 0-3 years.</p>
+              <!--<p><a href="event-ecd.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>-->
+            </div>
+          </div>
+        </div>
+        <!-- Event 2 -->
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry align-self-stretch">
+            <a href="pesps.html" class="block-20" style="background-image: url('images/pesps.jpg');">
+            </a>
+            <div class="text p-4 d-block">
+              <div class="meta mb-3">
+                <div><a href="#">Jan. 15, 2025</a></div>
+                <div><a href="#">ADS Nyanza</a></div>
+                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 8</a></div>
+              </div>
+              <h3 class="heading mb-4"><a href="event-pesp.html">Digital Agriculture Training</a></h3>
+              <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 10:00 AM - 3:30 PM</span> <span><i class="icon-map-o"></i> Nyanza Regional Hub</span></p>
+              <p>Enhancing farmers' knowledge with tools like iShamba and iCow for sustainable farming under the Peoples Empowerment for Sustainability Project (PESP).</p>
+              <!--<p><a href="event-pesp.html">Join Event <i class="ion-ios-arrow-forward"></i></a></p>-->
+            </div>
+          </div>
+        </div>
+        <!-- Event 3 -->
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry align-self-stretch">
+            <a href="#" class="block-20" style="background-image: url('images/staff.jpg');">
+            </a>
+            <div class="text p-4 d-block">
+              <div class="meta mb-3">
+                <div><a href="#">Feb. 15, 2025</a></div>
+                <div><a href="#">ADS Nyanza</a></div>
+                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 10</a></div>
+              </div>
+              <h3 class="heading mb-4"><a href="#">Strategic Planning Meeting 2025</a></h3>
+              <p class="time-loc"><span class="mr-2"><i class="icon-clock-o"></i> 9:00 AM - 4:00 PM</span> <span><i class="icon-map-o"></i> Kisumu Conference Center</span></p>
+              <p>An engaging forum to outline and align goals, discuss organizational priorities, and set the roadmap for achieving sustainable impact in 2025 and beyond.</p>
+              <!--<p><a href="#">Join Event <i class="ion-ios-arrow-forward"></i></a></p>-->
+           
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+		
+  <section class="ftco-section volunteer-section" style="background-color: #f8f9fa;">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <!-- Image Section -->
+        <div class="col-md-6 d-flex mb-4 mb-md-0">
+          <img src="images/vol.jpg" alt="Volunteer Image" style="width: 100%; height: 350px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        </div>
+        <!-- Volunteer Form Section -->
+        <div class="col-md-6 pl-md-5">
+          <h3 class="mb-4 text-primary font-weight-bold">Become a Volunteer</h3>
+          <p class="mb-4 text-secondary">Join us in making a positive impact. Fill out the form below to volunteer for our events and initiatives. Let’s create change together!</p>
+          <form action="mailto:ads@ads-nyanza.org" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="name" class="sr-only">Your Name</label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="sr-only">Your Email</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="sr-only">Message</label>
+              <textarea name="message" class="form-control" id="message" placeholder="Message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary py-3 px-5" style="border-radius: 50px;">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+      /* Footer Styles */
+      footer {
+          background-color: #28a745;
+          color: white;
+          padding: 2px 0;
+      }
+  
+      footer a {
+          color: white;
+          text-decoration: none;
+          transition: color 0.3s;
+      }
+  
+      footer a:hover {
+          color: #d4edda;
+      }
+  
+      .social-icons a {
+          font-size: 24px;
+          margin-right: 15px;
+          color: white;
+          transition: transform 0.3s, color 0.3s;
+      }
+  
+      .social-icons a:hover {
+          transform: scale(1.2);
+          color: #d4edda;
+      }
+  
+      /* Footer Bottom Text */
+      .footer-bottom p {
+          font-size: 11px;
+      }
+  </style>
+  
+  <footer>
+      <div class="container">
+          <div class="row">
+              <!-- Location, Phone & Email Section -->
+              <div class="col-md-4 mb-4">
+                  <h5 class="mb-3 text-uppercase font-weight-bold">Location</h5>
+                  <p><i class="fas fa-map-marker-alt"></i> St. Peters Church Milimani, Along Omolo Agar Road, Kisumu, Kenya</p>
+                  <p><i class="fas fa-phone-alt"></i> +254 726947044</p>
+                  <p><i class="fas fa-envelope"></i> <a href="mailto:ads@ads-nyanza.org">ads@ads-nyanza.org</a></p>
+              </div>
+  
+              <!-- Useful Links Section -->
+              <div class="col-md-4 mb-4">
+                  <h5 class="mb-3 text-uppercase font-weight-bold">Useful Links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#" onmouseover="hoverLink(this)" onmouseout="unhoverLink(this)">Careers</a></li>
+                      <li><a href="https://ess.ads-nyanza.org/login" onmouseover="hoverLink(this)" onmouseout="unhoverLink(this)">Staff Portal</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Follow Us Section -->
+              <div class="col-md-4">
+                  <h5 class="mb-3 text-uppercase font-weight-bold">Follow Us</h5>
+                  <div class="social-icons">
+                      <a href="https://www.facebook.com/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.linkedin.com/company/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                      <a href="https://www.instagram.com/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.youtube.com/channel/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+                  </div>
+              </div>
+          </div>
+          <!-- Footer Bottom -->
+          <div class="footer-bottom mt-4 text-center">
+              <p>&copy; 2024 ADS Nyanza. All Rights Reserved.</p>
+          </div>
+      </div>
+  </footer>
+  
+  <script>
+      // Hover effect for links
+      function hoverLink(element) {
+          element.style.textDecoration = "underline";
+          element.style.color = "#d4edda";
+      }
+  
+      function unhoverLink(element) {
+          element.style.textDecoration = "none";
+          element.style.color = "white";
+      }
+  </script>
+  
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="24px" height="24px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

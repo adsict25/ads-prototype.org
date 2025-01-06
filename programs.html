@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ADS NYANZA - Our Programs</title>
+    <link rel="icon" type="image/x-icon" href="images/ads.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        /* Navbar Styling */
+        .navbar-green {
+            background-color: #28a745 !important; /* ADS Green */
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+        }
+
+        .navbar .nav-link:hover {
+            color: #6f42c1 !important; /* ADS Purple */
+        }
+
+        .dropdown-menu {
+            background-color: #28a745 !important;
+        }
+
+        .dropdown-item {
+            color: white !important;
+        }
+
+        .dropdown-item:hover {
+            background-color: #6f42c1 !important;
+        }
+
+        /* Hero Section */
+        .hero-wrap {
+            background-image: url('images/bg_7.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 20px 0; /* Minimized height */
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-wrap .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .hero-wrap h1 {
+            color: white;
+            font-size: 2rem;
+            z-index: 2;
+            position: right;
+            text-align: right; /* Right-aligns all text within the container */
+        }
+
+        .hero-wrap h2 {
+            color: #6f42c1; /* ADS Purple */
+            z-index: 2;
+            position: relative;
+        }
+
+        /* Program Details Section */
+        #programDetails {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        #programDetails h3 {
+            color: #28a745; /* ADS Green */
+        }
+
+        #programDetails p {
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        .btn-learn-more {
+            background-color: #28a745;
+            color: white;
+            border-radius: 20px;
+            padding: 8px 20px;
+        }
+
+        .btn-learn-more:hover {
+            background-color: #6f42c1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar" id="ftco-navbar" style="background-color: hwb(120 35% 22%);">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"></a>
+          <img src="images/ads.png" alt="ADS Logo" style="height: 100px; margin-right: 20px;"> <!-- Logo -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+          </button>
+    
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="programs.html" id="programsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Our Programs
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="programsDropdown">
+                        <a class="dropdown-item" href="ecd.html" onclick="displayProgram('earlyChildhood')">Early Childhood Development</a>
+                        <a class="dropdown-item" href="gf.html" onclick="displayProgram('globalFund')">Global Fund</a>
+                        <a class="dropdown-item" href="wkpi.html" onclick="displayProgram('peaceInitiative')">West Kenya Peace Initiative</a>
+                        <a class="dropdown-item" href="emergency.html" onclick="displayProgram('emergencyResponse')">Emergency Response</a>
+                        <a class="dropdown-item" href="icrp.html" onclick="displayProgram('climateResilience')">Integrated Climate Resilience Project</a>
+                        <a class="dropdown-item" href="pesps.html" onclick="displayProgram('peopleEmpowerment')">People Empowerment for Sustainability Project</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="periodicals.html" class="nav-link">Periodicals</a></li>
+                <li class="nav-item"><a href="involve.html" class="nav-link">Get Involved</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </div>
+        </div>
+      </nav>
+        <!-- END nav -->
+   <!-- Hero Section -->
+<div class="hero-wrap">
+  <div class="overlay"></div>
+  <div class="container text-end"> <!-- Bootstrap's text-end class for right alignment -->
+      <h1>Our Programs</h1>
+      <h2></h2>
+  </div>
+</div>
+
+    <!-- Program Details Section 
+    <div class="container mt-5">
+        <div id="programDetails" class="text-center">
+            <h3>Select a Program</h3>
+            <p>Use the navigation bar to select a program and view its details here.</p>
+        </div>
+    </div>
+    -->
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function displayProgram(program) {
+            let programContent = '';
+
+            switch (program) {
+                case 'earlyChildhood':
+                    programContent = `
+                        <h3>Early Childhood Development</h3>
+                        <p>Advancing early childhood education with a focus on cognitive, physical, and emotional growth for children aged 0-3.</p>
+                        <a href="ecd.html" class="btn btn-learn-more">Learn More</a>`;
+                    break;
+                case 'globalFund':
+                    programContent = `
+                        <h3>Global Fund</h3>
+                        <p>Improving health outcomes through community-based health initiatives in Homa Bay.</p>
+                        <a href="#" class="btn btn-learn-more">Learn More</a>`;
+                    break;
+                case 'peaceInitiative':
+                    programContent = `
+                        <h3>West Kenya Peace Initiative</h3>
+                        <p>Promoting peace and conflict resolution in Kisumu and Siaya through dialogue and collaboration.</p>
+                        <a href="#" class="btn btn-learn-more">Learn More</a>`;
+                    break;
+                case 'emergencyResponse':
+                    programContent = `
+                        <h3>Emergency Response</h3>
+                        <p>Providing emergency relief during disasters in Kisii, Migori, and Homa Bay.</p>
+                        <a href="#" class="btn btn-learn-more">Learn More</a>`;
+                    break;
+                case 'climateResilience':
+                    programContent = `
+                        <h3>Integrated Climate Resilience</h3>
+                        <p>Empowering communities to adapt to climate change through sustainable practices in Kisumu, Homa Bay, and Siaya.</p>
+                        <a href="#" class="btn btn-learn-more">Learn More</a>`;
+                    break;
+                case 'peopleEmpowerment':
+                    programContent = `
+                        <h3>People Empowerment for Sustainability</h3>
+                        <p>Building local capacity through training, skill development, and resource mobilization in Kisumu and Siaya.</p>
+                        <a href="#" class="btn btn-learn-more">Learn More</a>`;
+                    break;
+            }
+
+            document.getElementById('programDetails').innerHTML = programContent;
+        }
+    </script>
+ 
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Font Awesome -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+      <style>
+          /* Footer Styles */
+          footer {
+              background-color: #28a745;
+              color: white;
+              padding: 30px 0;
+              position: relative;
+              overflow: hidden;
+          }
+  
+          footer a {
+              color: white;
+              text-decoration: none;
+              transition: color 0.3s;
+          }
+  
+          footer a:hover {
+              color: #d4edda;
+          }
+  
+          .social-icons a {
+              font-size: 24px;
+              margin-right: 15px;
+              color: white;
+              transition: transform 0.3s, color 0.3s;
+          }
+  
+          .social-icons a:hover {
+              transform: scale(1.2);
+              color: #d4edda;
+          }
+  
+          #footer-bg {
+              position: absolute;
+              top: 0;
+              left: -50%;
+              width: 200%;
+              height: 200%;
+              background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+              animation: move-bg 8s linear infinite;
+          }
+  
+          @keyframes move-bg {
+              0% {
+                  transform: translate(0, 0);
+              }
+              100% {
+                  transform: translate(50%, 50%);
+              }
+          }
+  
+          /* Link Hover Animation */
+          @keyframes linkHover {
+              0% {
+                  letter-spacing: 0;
+              }
+              100% {
+                  letter-spacing: 2px;
+              }
+          }
+      </style>
+  
+  
+  <footer>
+      <div class="container">
+          <div class="row">
+              <!-- Location, Phone & Email Section -->
+              <div class="col-md-4 mb-4">
+                  <h5 class="mb-3 text-uppercase font-weight-bold">Location</h5>
+                  <p><i class="fas fa-map-marker-alt"></i> St. Peters Church Milimani, Along Omolo Agar Road, Kisumu, Kenya</p>
+                  <p><i class="fas fa-phone-alt"></i> +254 726947044</p>
+                  <p><i class="fas fa-envelope"></i> <a href="mailto:ads@ads-nyanza.org">ads@ads-nyanza.org</a></p>
+              </div>
+  
+              <!-- Useful Links Section -->
+              <div class="col-md-4 mb-4">
+                  <h5 class="mb-3 text-uppercase font-weight-bold">Useful Links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#" onmouseover="hoverLink(this)" onmouseout="unhoverLink(this)">Careers</a></li>
+                      <li><a href="#" onmouseover="hoverLink(this)" onmouseout="unhoverLink(this)">Staff Portal</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Follow Us Section -->
+              <div class="col-md-4">
+                  <h5 class="mb-3 text-uppercase font-weight-bold">Follow Us</h5>
+                  <div class="social-icons">
+                      <a href="https://www.facebook.com/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.linkedin.com/company/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                      <a href="https://www.instagram.com/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.youtube.com/channel/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Footer Bottom -->
+          <div class="footer-bottom mt-4 text-center">
+              <p>&copy; 2024 ADS Nyanza. All Rights Reserved. Designed by <span id="web-team" style="font-weight: bold;"></span>.</p>
+          </div>
+      </div>
+  
+      <!-- Animated Background -->
+      <div id="footer-bg"></div>
+  </footer>
+  
+  <script>
+      // Hover effect for links
+      function hoverLink(element) {
+          element.style.textDecoration = "underline";
+          element.style.color = "#d4edda";
+      }
+  
+      function unhoverLink(element) {
+          element.style.textDecoration = "none";
+          element.style.color = "white";
+      }
+  
+      // Animate footer text
+      const webTeam = document.getElementById("web-team");
+      const text = "ADS Nyanza Web Team";
+      let i = 0;
+      function animateText() {
+          if (i < text.length) {
+              webTeam.textContent += text.charAt(i);
+              i++;
+              setTimeout(animateText, 100);
+          }
+      }
+      animateText();
+  </script>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+
+<!-- Include Font Awesome for Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>

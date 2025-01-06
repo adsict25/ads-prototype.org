@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us - ADS NYANZA</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/ads.jpg') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+
+    <style>
+        body {
+            font-family: 'Overpass', sans-serif;
+        }
+
+        .hero-wrap {
+            background-size: cover;
+            height: 60vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-heading {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #28a745;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-container {
+            height: 400px;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .btn-primary {
+            background-color: #28a745;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #218838;
+        }
+
+        .ssl-secure {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar bg-light py-2 border-bottom">
+          <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo Section -->
+            <div>
+              <a href="index.html">
+                <img src="images/ads.png" alt="ADS Logo" style="height: 100px;">
+              </a>
+            </div>
+      
+            <!-- Language Dropdown -->
+            <div class="dropdown">
+              <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/uk.jpg" alt="English" style="height: 20px; margin-right: 5px;"> English
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('german')"><img src="images/german.png" alt="German" style="height: 20px; margin-right: 5px;"> German</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('french')"><img src="images/french.png" alt="French" style="height: 20px; margin-right: 5px;"> French</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('italian')"><img src="images/italian.png" alt="Italian" style="height: 20px; margin-right: 5px;"> Italian</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('spanish')"><img src="images/spanish.png" alt="Spanish" style="height: 20px; margin-right: 5px;"> Spanish</a></li>
+                <li><a class="dropdown-item" href="#" onclick="setLanguage('dutch')"><img src="images/dutch.jpg" alt="Dutch" style="height: 20px; margin-right: 5px;"> Dutch</a></li>
+              </ul>
+            </div>
+      
+            <!-- Social Media Icons -->
+            <div>
+              <a href="https://www.facebook.com/people/ADS-Nyanza/61557946673947/" class="text-secondary mx-2"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://x.com/Ads_Nyanza" class="text-secondary mx-2"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/adsnyanza/" class="text-secondary mx-2"><i class="fab fa-instagram"></i></a>
+              <a href="http://www.youtube.com/@ADS-NYANZA" class="text-secondary mx-2"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.linkedin.com/in/ads-nyanza-aa998b2b6/" class="text-secondary mx-2"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4CAF50;">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link text-white font-weight-bold">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link text-white font-weight-bold">About Us</a></li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle text-white font-weight-bold" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="ecd.html">Early Childhood Development</a></li>
+                    <li><a class="dropdown-item" href="gf.html">Global Fund</a></li>
+                    <li><a class="dropdown-item" href="wkpi.html">West Kenya Peace Initiative</a></li>
+                    <li><a class="dropdown-item" href="icrp.html">Integrated Climate Resileince Project</a></li>
+                    <li><a class="dropdown-item" href="emergency.html">Emergency Response</a></li>
+                    <li><a class="dropdown-item" href="pesps.html">Peoples Empowerment & Sustainability Project</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="periodicals.html" class="nav-link text-white font-weight-bold">Periodicals</a></li>
+                <li class="nav-item"><a href="involve.html" class="nav-link text-white font-weight-bold">Get Involved</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link text-white font-weight-bold">Contact Us</a></li>
+                <li class="nav-item"><a href="https://ess.ads-nyanza.org/login" class="nav-link text-white font-weight-bold">Staff Portal</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    
+    <style>
+      /* CSS for dynamic color and boldness */
+      .dynamic-color {
+        color: #f5e8f5; /* Light color for good contrast with the greenish background */
+        transition: color 0.3s ease-in-out;
+      }
+    
+      .dynamic-color:hover {
+        color: #81c784; /* Brighter green to create a dynamic hover effect */
+      }
+    
+      .font-weight-bold {
+        font-weight: 700; /* Ensures text is bold */
+      }
+    </style>
+    
+    <div class="hero-wrap" style="background-image: url('images/team.jpg');">
+        <div class="overlay"></div>
+        <div class="container text-center text-white">
+            <h1 class="mb-3"> </h1>
+            <p> </p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="section-heading">
+            <h2>Get In Touch</h2>
+        </div>
+
+        <div class="container py-5">
+            <div class="row g-4">
+                <!-- Contact Form -->
+                <div class="col-md-6">
+                    <div>
+                        <h4 class="mb-4 text-primary">Get in Touch</h4>
+                        <form action="mailto:ads@ads-nyanza.org" method="POST" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control form-control-sm" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control form-control-sm" id="message" name="message" rows="3" placeholder="Write your message here" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-sm btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+        
+                <!-- Contact Details -->
+                <div class="col-md-6">
+                    <div>
+                        <h4 class="mb-3 text-primary">Contact Details</h4>
+                        <p><strong>Office:</strong> Kisumu, Kenya</p>
+                        <p><strong>Email:</strong> <a href="mailto:ads@ads-nyanza.org">ads@ads-nyanza.org</a></p>
+                        <p><strong>Phone:</strong> +254 726947044 <br><small>Mon - Fri, 9:00 AM - 5:00 PM</small></p>
+        
+                        <h5 class="mt-4">What People Say</h5>
+                        <ul class="list-unstyled">
+                            <li>"ADS Nyanza made it easy to get involved in meaningful community projects." <span class="fw-bold text-primary">- John Okoth</span></li>
+                            <li>"Professional staff, always ready to assist." <span class="fw-bold text-primary">- Jane Akoth</span></li>
+                        </ul>
+        
+                        <h5 class="mt-4">Our Satellite Offices</h5>
+                        <ul class="list-unstyled">
+                            <li><strong>Bondo:</strong> Bondo Town</li>
+                            <li><strong>Homabay:</strong> Homabay Town, ACK Church</li>
+                            <li><strong>Siaya:</strong> Siaya Town</li>
+                            <li><strong>Migori:</strong> Migori Town</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Map Section -->
+            <div class="mt-4">
+                <h4 class="text-primary mb-3">Our Location</h4>
+                <div id="map" style="height: 500px; width: 135%; border-radius: 5px;"></div>
+            </div>
+        </div>
+        
+        <!-- Leaflet.js Map Integration -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script>
+            var map = L.map('map').setView([-0.0917, 34.7676], 12); // Kisumu coordinates
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+                maxZoom: 24,
+            }).addTo(map);
+            L.marker([-0.10980, 34.75187]).addTo(map)
+                .bindPopup('ADS Nyanza Headquarters<br>Kisumu, Kenya')
+                .openPopup();
+        </script>
+        
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<style>
+    /* Footer Styles */
+    footer {
+        background-color: #28a745;
+        color: white;
+        padding: 2px 0;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    footer a:hover {
+        color: #d4edda;
+    }
+
+    .social-icons a {
+        font-size: 24px;
+        margin-right: 15px;
+        color: white;
+        transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-icons a:hover {
+        transform: scale(1.2);
+        color: #d4edda;
+    }
+
+    /* Footer Bottom Text */
+    .footer-bottom p {
+        font-size: 11px;
+    }
+</style>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <!-- Location, Phone & Email Section -->
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3 text-uppercase font-weight-bold">Location</h5>
+                <p><i class="fas fa-map-marker-alt"></i> St. Peters Church Milimani, Along Omolo Agar Road, Kisumu, Kenya</p>
+                <p><i class="fas fa-phone-alt"></i> +254 726947044</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:ads@ads-nyanza.org">ads@ads-nyanza.org</a></p>
+            </div>
+
+            <!-- Useful Links Section -->
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3 text-uppercase font-weight-bold">Useful Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" onmouseover="hoverLink(this)" onmouseout="unhoverLink(this)">Careers</a></li>
+                    <li><a href="https://ess.ads-nyanza.org/login" onmouseover="hoverLink(this)" onmouseout="unhoverLink(this)">Staff Portal</a></li>
+                </ul>
+            </div>
+
+            <!-- Follow Us Section -->
+            <div class="col-md-4">
+                <h5 class="mb-3 text-uppercase font-weight-bold">Follow Us</h5>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom mt-4 text-center">
+            <p>&copy; 2025 ADS Nyanza. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Hover effect for links
+    function hoverLink(element) {
+        element.style.textDecoration = "underline";
+        element.style.color = "#d4edda";
+    }
+
+    function unhoverLink(element) {
+        element.style.textDecoration = "none";
+        element.style.color = "white";
+    }
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

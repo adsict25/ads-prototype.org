@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Get Involved - ADS NYANZA</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/ads.jpg') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Overpass', sans-serif;
+        }
+
+        .hero-wrap {
+            background-size: cover;
+            height: 60vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-heading {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #28a745;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 350px;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .btn-primary {
+            background-color: #28a745;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #218838;
+        }
+
+        .upload-section {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-list ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .job-list ul li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .job-list ul li:last-child {
+            border-bottom: none;
+        }
+
+        .payment-icons img {
+            width: 40px; /* Adjust to desired size */
+            height: auto; /* Maintain aspect ratio */
+            margin: 5px; /* Provide some spacing */
+        }
+
+        .payment-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .ssl-secure {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+   <!-- Top Bar -->
+   <div class="top-bar bg-light py-2 border-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Logo Section -->
+      <div>
+        <a href="index.html">
+          <img src="images/ads.png" alt="ADS Logo" style="height: 100px;">
+        </a>
+      </div>
+
+      <!-- Language Dropdown -->
+      <div class="dropdown">
+        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="images/uk.jpg" alt="English" style="height: 20px; margin-right: 5px;"> English
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+          <li><a class="dropdown-item" href="#" onclick="setLanguage('german')"><img src="images/german.png" alt="German" style="height: 20px; margin-right: 5px;"> German</a></li>
+          <li><a class="dropdown-item" href="#" onclick="setLanguage('french')"><img src="images/french.png" alt="French" style="height: 20px; margin-right: 5px;"> French</a></li>
+          <li><a class="dropdown-item" href="#" onclick="setLanguage('italian')"><img src="images/italian.png" alt="Italian" style="height: 20px; margin-right: 5px;"> Italian</a></li>
+          <li><a class="dropdown-item" href="#" onclick="setLanguage('spanish')"><img src="images/spanish.png" alt="Spanish" style="height: 20px; margin-right: 5px;"> Spanish</a></li>
+          <li><a class="dropdown-item" href="#" onclick="setLanguage('dutch')"><img src="images/dutch.jpg" alt="Dutch" style="height: 20px; margin-right: 5px;"> Dutch</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div>
+        <a href="https://www.facebook.com/people/ADS-Nyanza/61557946673947/" class="text-secondary mx-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/Ads_Nyanza" class="text-secondary mx-2"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/adsnyanza/" class="text-secondary mx-2"><i class="fab fa-instagram"></i></a>
+        <a href="http://www.youtube.com/@ADS-NYANZA" class="text-secondary mx-2"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/ads-nyanza-aa998b2b6/" class="text-secondary mx-2"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4CAF50;">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link text-white font-weight-bold">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link text-white font-weight-bold">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle text-white font-weight-bold" id="programsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ecd.html">Early Childhood Development</a></li>
+              <li><a class="dropdown-item" href="gf.html">Global Fund</a></li>
+              <li><a class="dropdown-item" href="wkpi.html">West Kenya Peace Initiative</a></li>
+              <li><a class="dropdown-item" href="icrp.html">Integrated Climate Resileince Project</a></li>
+              <li><a class="dropdown-item" href="emergency.html">Emergency Response</a></li>
+              <li><a class="dropdown-item" href="pesps.html">Peoples Empowerment & Sustainability Project</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="periodicals.html" class="nav-link text-white font-weight-bold">Periodicals</a></li>
+          <li class="nav-item"><a href="get-involved.html" class="nav-link text-white font-weight-bold">Get Involved</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link text-white font-weight-bold">Contact Us</a></li>
+          <li class="nav-item"><a href="https://ess.ads-nyanza.org/login" class="nav-link text-white font-weight-bold">Staff Portal</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+    <!-- END nav -->
+    
+    <style>
+      /* CSS for dynamic color and boldness */
+      .dynamic-color {
+        color: #f5e8f5; /* Light color for good contrast with the greenish background */
+        transition: color 0.3s ease-in-out;
+      }
+    
+      .dynamic-color:hover {
+        color: #81c784; /* Brighter green to create a dynamic hover effect */
+      }
+    
+      .font-weight-bold {
+        font-weight: 700; /* Ensures text is bold */
+      }
+    </style>
+    
+
+    <div class="hero-wrap" style="background-image: url('images/involve.jpg');">
+        <div class="overlay"></div>
+        <div class="container text-center text-white">
+            <h1 class="mb-3"> </h1>
+            <p> </p>
+        </div>
+    </div>
+
+    <section class="container py-5">
+        <div class="row">
+            <!-- Volunteer with Us Section -->
+            <div class="col-md-6 mb-4">
+                <h2 class="section-heading text-center">Volunteer with Us</h2>
+                <p class="text-center">Join ADS Nyanza and be part of impactful initiatives that empower communities. Your time and skills can make a significant difference.</p>
+                <div class="shadow-sm p-4 rounded bg-light">
+                    <form action="https://formsubmit.co/ads@ads-nyanza.org" method="POST" enctype="multipart/form-data">
+                        <div class="row">
+                            <!-- First Name -->
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <!-- Last Name -->
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Physical Address -->
+                            <div class="col-md-6 mb-3">
+                                <label for="address" class="form-label">Physical Address</label>
+                                <input type="text" id="address" name="address" class="form-control" placeholder="Your Address" required>
+                            </div>
+                            <!-- Phone Number -->
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Primary Phone" required>
+                            </div>
+                        </div>
+                        <!-- Alternate Phone -->
+                        <div class="mb-3">
+                            <label for="altPhone" class="form-label">Alternative Phone Number</label>
+                            <input type="tel" id="altPhone" name="altPhone" class="form-control" placeholder="Alternative Phone">
+                        </div>
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <!-- CV Upload -->
+                        <div class="mb-3">
+                            <label for="cv" class="form-label">Upload CV/Portfolio</label>
+                            <input type="file" id="cv" name="cv" class="form-control" accept=".pdf,.doc,.docx" required>
+                        </div>
+                        <!-- Reason for Volunteering -->
+                        <div class="mb-3">
+                            <label for="reason" class="form-label">Reason for Volunteering</label>
+                            <textarea id="reason" name="reason" rows="3" class="form-control" placeholder="Why do you want to volunteer?" required></textarea>
+                        </div>
+                        <!-- Hidden Fields -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://ads-nyanza.org/thank-you.html">
+                        <!-- Submit Button -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Submit Application</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <!-- Careers Section -->
+            <div class="col-md-6">
+                <h2 class="section-heading">Careers</h2>
+                <p>We are seeking passionate individuals to join ADS Nyanza. Explore job opportunities below and contribute to our mission of empowering communities.</p>
+                <div class="shadow-sm p-4 rounded bg-light">
+                    <h4 class="mb-3">Current Openings:</h4>
+                    <ul class="list-group list-group-flush">
+                        <!-- Job Listing -->
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <strong>Program Manager</strong> <br>
+                                <small>Posted: 01-Dec-2024 | Deadline: 15-Jan-2025</small>
+                            </div>
+                            <a href="files/programs_man.pdf" download class="btn btn-primary btn-sm">Download</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <strong>Field Officer</strong> <br>
+                                <small>Posted: 01-Dec-2024 | Deadline: 30-Jan-2025</small>
+                            </div>
+                            <a href="files/programs_man.pdf" download class="btn btn-primary btn-sm">Download</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <strong>IT Specialist</strong> <br>
+                                <small>Posted: 01-Dec-2024 | Deadline: 10-Feb-2025</small>
+                            </div>
+                            <a href="files/programs_man.pdf" download class="btn btn-primary btn-sm">Download</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="container py-5">
+        <div class="row">
+            <!-- Donation Information -->
+            <div class="col-md-6">
+                <h2 class="section-heading">Donate</h2>
+                <p>ADS Nyanza is dedicated to transforming lives and empowering communities through sustainable development initiatives. Your support fuels our mission to promote social welfare, education, and economic empowerment in Nyanza and beyond.</p>
+                <p>Whether you are donating to support ongoing programs like Early Childhood Development or new initiatives such as digital extension agriculture, your generosity allows us to expand our impact and reach more vulnerable communities.</p>
+                <p>For donation inquiries, contact:</p>
+                <ul class="list-unstyled">
+                    <li><strong>Contact Person:</strong>Ads Nyanza</li>
+                    <li><strong>Phone:</strong> +254 726947044</li>
+                    <li><strong>Email:</strong> ads@adsnyanza.org</li>
+                </ul>
+            </div>
+    
+            <!-- Donation Form -->
+            <div class="col-md-6">
+                <div class="shadow-sm p-4 rounded bg-light">
+                    <form action="https://formsubmit.co/ads@ads-nyanza.org" method="POST">
+                        <!-- Donation Amount -->
+                        <div class="form-group mb-3">
+                            <label for="donationAmount" class="form-label">Donation Amount (KES):</label>
+                            <input type="number" class="form-control" id="donationAmount" name="donationAmount" placeholder="Enter amount" required>
+                        </div>
+                        <!-- Payment Options -->
+                        <h4 class="mt-3">Payment Options:</h4>
+                        <div class="payment-section mb-3">
+                            <div class="form-check">
+                                <input type="radio" id="mpesa" name="paymentMethod" value="Mpesa" class="form-check-input" required>
+                                <label for="mpesa" class="form-check-label">Mpesa</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="paypal" name="paymentMethod" value="Paypal" class="form-check-input" required>
+                                <label for="paypal" class="form-check-label">Paypal</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="visa" name="paymentMethod" value="Visa" class="form-check-input" required>
+                                <label for="visa" class="form-check-label">Visa</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="globalpay" name="paymentMethod" value="GlobalPay" class="form-check-input" required>
+                                <label for="globalpay" class="form-check-label">GlobalPay</label>
+                            </div>
+                        </div>
+                        <div class="ssl-secure text-muted">
+                            <small><i class="bi bi-shield-lock-fill"></i> Secured by SSL Encryption</small>
+                        </div>
+                        <!-- Hidden Fields -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://ads-nyanza.org/thank-you.html">
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary mt-3 w-100">Donate Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+   
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<style>
+    /* Footer Styles */
+    footer {
+        background-color: #28a745;
+        color: white;
+        padding: 2px 0;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    footer a:hover {
+        color: #d4edda;
+    }
+
+    .social-icons a {
+        font-size: 24px;
+        margin-right: 15px;
+        color: white;
+        transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-icons a:hover {
+        transform: scale(1.2);
+        color: #d4edda;
+    }
+
+    /* Footer Bottom Text */
+    .footer-bottom p {
+        font-size: 11px;
+    }
+</style>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <!-- Location, Phone & Email Section -->
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3 text-uppercase font-weight-bold">Location</h5>
+                <p><i class="fas fa-map-marker-alt"></i> St. Peters Church Milimani, Along Omolo Agar Road, Kisumu, Kenya</p>
+                <p><i class="fas fa-phone-alt"></i> +254 726947044</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:ads@ads-nyanza.org">ads@ads-nyanza.org</a></p>
+            </div>
+
+            <!-- Useful Links Section -->
+            <div class="col-md-4 mb-4">
+                <h5 class="mb-3 text-uppercase font-weight-bold">Useful Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" onmouseover="hoverLink(this)" onmouseout="unhoverLink(this)">Careers</a></li>
+                    <li><a href="https://ess.ads-nyanza.org/login" onmouseover="hoverLink(this)" onmouseout="unhoverLink(this)">Staff Portal</a></li>
+                </ul>
+            </div>
+
+            <!-- Follow Us Section -->
+            <div class="col-md-4">
+                <h5 class="mb-3 text-uppercase font-weight-bold">Follow Us</h5>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/ads-nyanza" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom mt-4 text-center">
+            <p>&copy; 2024 ADS Nyanza. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Hover effect for links
+    function hoverLink(element) {
+        element.style.textDecoration = "underline";
+        element.style.color = "#d4edda";
+    }
+
+    function unhoverLink(element) {
+        element.style.textDecoration = "none";
+        element.style.color = "white";
+    }
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
